@@ -1,0 +1,12 @@
+---
+import { getProfile } from "../lib/api/profile";
+import Layout from "../layouts/Layout.astro";
+
+const profile = await getProfile();
+---
+
+
+<Layout title={profile.name}>
+  <h1 class="text-3xl font-bold">{profile.name}</h1>
+  <p>{profile.title}</p>
+</Layout>
