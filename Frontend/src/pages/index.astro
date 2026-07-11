@@ -1,10 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import portfolio from "../data/portfolio.json";
-
+import { Icon } from "astro-icon/components";
+import Drawer from "../components/Drawer.astro";
+import Profile from "../components/Profile.astro";
 ---
 
 <Layout title={portfolio.profile.name}>
-  <!-- <h1 class="text-3xl font-bold ">{portfolio.profile.name}</h1>
-  <p>{portfolio.profile.title}</p> -->
+  <button id="menu-btn" class="md:hidden fixed top-0 right-0 z-50 m-4 rounded-full bg-white/10 p-2 text-white backdrop-blur-md">
+    <Icon name="lucide:menu" class="h-7 w-7" /> 
+  </button>
+  <Drawer />
+  <Profile />
 </Layout>

@@ -3,34 +3,44 @@ import css from "../styles/global.css";
 import { Icon } from "astro-icon/components";
 import portfolio from "../data/portfolio.json";
 ---
+<div id="overlay" class="fixed inset-0 z-40 hidden bg-black/50"></div>
 
 <aside
   id="drawer"
-  class="fixed inset-y-0 right-0 w-72 translate-x-full bg-surface shadow-xl transition-transform duration-300 font-serif md:hidden">    
+  class="fixed inset-y-0 right-0 w-72 translate-x-full bg-surface z-50 shadow-xl transition-transform duration-300 font-serif">    
   <div class="flex h-full flex-col">
     <!-- Header -->
-    <div class="flex justify-end p-4">
-      <button
-        id="close-btn"
-        class="rounded-full bg-white/10 p-2 text-white backdrop-blur-md"
-      >
-        <Icon name="lucide:circle-chevron-right" class="h-7 w-7" />
+    <div class="flex justify-end p-3">
+      <button id="close-btn" class="rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
+        <Icon name="lucide:x" class="h-7 w-7" />
       </button>
     </div>
 
     <!-- Drawer Items -->
-    <nav class="">
-      <ul class="flex flex-col items-end mr-7 gap-3 backdrop-blur-md shadow-lg">
-        {portfolio.navigation.map((item) => (
-          <li>
-            <a
-              href={item.href}
-            >
-              {item.title}
-            </a>
-          </li>
-        ))}
+    <nav>
+      <ul class="flex flex-col items-end mr-3 gap-3">
+        {portfolio.navigation.map((item) => (<li><a class="link hover:text-white" href={item.href}> {item.title} </a></li>))}
       </ul>
     </nav>  
   </div>
 </aside>
+
+<script>
+  const links = document.querySelectorAll(".link")
+  const overlay = document.getElementById("overlay");
+  const drawer = document.getElementById("drawer")
+  const closeBtn = document.getElementById("close-btn");
+
+  function closeDrawer() {
+    drawer?.classList.add("translate-x-full");
+    overlay?.classList.add("hidden");
+  };
+
+  closeBtn?.addEventListener("click", closeDrawer);
+  overlay?.addEventListener("click", closeDrawer);
+  
+  links.forEach((link) => {
+    link.addEventListener("click", closeDrawer);
+  });
+
+</script>
