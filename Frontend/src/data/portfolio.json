@@ -6,11 +6,11 @@
   },
   "navigation": [
     { "title": "Home", "href": "/" },
-    { "title": "Experience", "href": "#experience" },
-    { "title": "Education", "href": "#education" },
-    { "title": "Projects", "href": "#projects" },
-    { "title": "Skills", "href": "#skills" },
-    { "title": "Certifications", "href": "#certifications" }
+    { "title": "Experience", "href": "experience" },
+    { "title": "Education", "href": "education" },
+    { "title": "Projects", "href": "projects" },
+    { "title": "Skills", "href": "skills" },
+    { "title": "Certifications", "href": "certifications" }
   ],
   "skills": [
     {
