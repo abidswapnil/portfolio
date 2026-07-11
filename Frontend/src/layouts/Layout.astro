@@ -1,5 +1,11 @@
 ---
+import Navbar from "../components/Navbar.astro";
+import Drawer from "../components/Drawer.astro";
+import Profile from "../components/Profile.astro";
+import { Icon } from "astro-icon/components";
 import "../styles/global.css";
+
+
 
 const { title } = Astro.props;
 ---
@@ -7,12 +13,55 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
   </head>
 
-  <body class="flex flex-col items-center justify-center min-h-screen bg-black text-white">
-    <main>
-      <slot />
+  <body class="flex min-h-screen flex-col items-center justify-center bg-background text-white font-serif">
+    <div id="overlay" class="fixed inset-0 z-40 hidden bg-black/50"></div>
+    <div class="hidden md:block fixed top-0 z-50 w-full bg-white/10 backdrop-blur-md">
+      <Navbar />
+    </div>
+    <button id="menu-btn" class="md:hidden fixed top-0 right-0 z-50 m-4 rounded-full bg-white/10 p-2 text-white backdrop-blur-md">
+      <Icon name="lucide:circle-chevron-left" class="h-7 w-7" /> 
+    </button>
+    <Drawer />
+
+    <!-- Main page -->
+    <main class="flex w-full max-w-6xl gap-32 px-6">
+      <Profile />
     </main>
   </body>
 </html>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const closeBtn = document.getElementById("close-btn");
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("overlay");
+
+  menuBtn?.addEventListener("click", () => {
+    drawer?.classList.remove("translate-x-full");
+  });
+
+  function openDrawer() {
+    drawer?.classList.remove("translate-x-full");
+    menuBtn?.classList.add("hidden");
+    overlay?.classList.remove("hidden");
+  };
+
+  function closeDrawer() {
+    drawer?.classList.add("translate-x-full");
+    overlay?.classList.add("hidden");
+    menuBtn?.classList.remove("hidden");  
+  };
+
+  closeBtn?.addEventListener("click", () => {
+    drawer?.classList.add("translate-x-full");
+  });
+  
+  menuBtn?.addEventListener("click", openDrawer);
+  closeBtn?.addEventListener("click", closeDrawer);
+  overlay?.addEventListener("click", closeDrawer);
+
+</script>

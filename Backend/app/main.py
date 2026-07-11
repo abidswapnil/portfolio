@@ -1,5 +1,3 @@
-
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -16,5 +14,5 @@ app.add_middleware(
 def read_profile():
     return {
         "name": "Abid Shahriar",
-        "title": "Software Engineer"
+        "title": "Software Engineer (Backend)",
     }

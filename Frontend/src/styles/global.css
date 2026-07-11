@@ -1,9 +1,94 @@
 @import "tailwindcss";
 
+
 body {
   font-family: Inter, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Courier Prime";
+  src: url("/fonts/CourierPrime-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Comic Neue";
+  src: url("/fonts/ComicNeue-Regular.ttf") format("truetype");
+}
+
+@theme inline {
+  /* Fonts */
+  --font-sans : "Courier Prime", sans-serif;
+  --font-serif : "Comic Neue", serif;
+
+  /* Colors */
+  --color-background: #020617;
+  --color-surface: #0f172a;
+  --color-card: #1e293b;
+
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-accent: #22d3ee;
+
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+
+  /* Radius */
+  --radius-card: 1rem;
+  --radius-button: 0.75rem;
+
+  /* Shadow */
+  --shadow-card: 0 8px 24px rgb(0 0 0 / 0.2);
+
+  /* Animation token */
+  --animate-fade-in: fade-in 500ms ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--color-accent);
+  width: 0;
+  animation:
+    typing 1.8s steps(35, end) forwards,
+    blink 0.5s step-end infinite,
+    hideCursor 0s 1.4s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 11ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }

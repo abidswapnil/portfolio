@@ -1,0 +1,41 @@
+{
+  "profile": {
+    "name": "Abid Shahriar",
+    "title": "Backend Developer",
+    "tagline": "Building scalable APIs with FastAPI."
+  },
+  "navigation": [
+    { "title": "Home", "href": "/" },
+    { "title": "Experience", "href": "#experience" },
+    { "title": "Education", "href": "#education" },
+    { "title": "Projects", "href": "#projects" },
+    { "title": "Skills", "href": "#skills" },
+    { "title": "Certifications", "href": "#certifications" }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "level": 95
+    },
+    {
+      "name": "FastAPI",
+      "level": 90
+    }
+  ],
+  "projects": [
+    {
+      "title": "Portfolio API",
+      "github": "...",
+      "featured": true
+    }
+  ],
+  "experience": [],
+  "education": [],
+  "socials": {
+    "github": "...",
+    "linkedin": "..."
+  },
+  "footer": {
+    "copyright": "© 2026 Cosmic Being"
+  }
+}
