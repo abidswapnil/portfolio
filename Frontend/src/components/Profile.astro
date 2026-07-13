@@ -7,52 +7,24 @@ import { Icon } from "astro-icon/components";
 
 ---
 <section>
-     <div class="hero-container">      
-      <div class="md:flex">
-        <div class="profile-div">
-          <img
-            src={me.src}
-            alt="Abid Shahriar"
-            class="hero-image transition-transform duration-300 hover:scale-105"
-          />
-        </div>
-        <div class="px-8 py-4">
-          <div>Hey, I am</div>
-          <div class="mt-5 text-5xl md:text-5xl tracking-tight whitespace-nowrap text-white">Abid Shahriar</div>
-          <span class="mt-5 typing text-2xl text-gray-300">
-            I write REST API <Icon
-              name="lucide:code-xml"
-              class="inline-block h-6 w-6 align-middle text-cyan-400"
-            />
-          </span>
-          <p class="mt-5 text-gray-500 text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
+  <div class="md:flex justify-center font-serif">
+    <img
+        src={me.src}
+        alt="Abid Shahriar"
+        class="mx-auto max-w-48 h-auto object-cover rounded-xl"
+    />
+    <div class="md:ml-4 mt-4 md:mt-0">
+      <div class="text-sm md:text-lg my-1 ">Hey, I am</div>
+      <div class="text-3xl" >Abid Shahriar</div>
+      <span class="mt-5 typing text-2xl text-gray-300">
+        I write backend <Icon
+          name="lucide:database-zap"
+          class="inline-block h-6 w-6 align-middle text-cyan-400"
+        /> APIs
+      </span>
+      <p class="mt-3 mx-auto text-gray-300">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+     </p>  
     </div>
+  </div>
 </section>
-
-<style>
-  @reference "../styles/global.css";
-
-  .hero-container {
-      @apply mx-auto w-full max-w-6xl px-8 whitespace-normal font-serif;
-    }
-
-  .hero-title {
-    @apply text-white tracking-tight;
-  }
-
-  .profile-div {
-    @apply flex justify-center py-4 md:justify-center shrink-0;
-  }
-
-  .hero-image {
-      width: clamp(8rem, 25vw, 15rem);
-      height: clamp(8rem, 25vw, 15rem);
-      border-radius: 9999px;
-      object-fit: cover;
-  }
-
-</style>

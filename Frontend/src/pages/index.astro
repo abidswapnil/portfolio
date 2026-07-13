@@ -7,9 +7,5 @@ import Profile from "../components/Profile.astro";
 ---
 
 <Layout title={portfolio.profile.name}>
-  <button id="menu-btn" class="md:hidden fixed top-0 right-0 z-50 m-4 rounded-full bg-white/10 p-2 text-white backdrop-blur-md">
-    <Icon name="lucide:menu" class="h-7 w-7" /> 
-  </button>
-  <Drawer />
   <Profile />
 </Layout>

@@ -1,42 +1,29 @@
 ---
+import Drawer from "../components/Drawer.astro";
 import Navbar from "../components/Navbar.astro";
 import "../styles/global.css";
-
-
+import { ClientRouter } from "astro:transitions";
 
 const { title } = Astro.props;
 ---
 
 <html lang="en">
   <head>
+    <!-- <ClientRouter /> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
   </head>
 
-  <body class="flex min-h-screen flex-col items-center justify-center bg-background text-white font-serif">
-    <div id="overlay" class="fixed inset-0 z-40 hidden bg-black/50"></div>
-    <div class="hidden md:block fixed top-0 z-50 w-full bg-white/10 backdrop-blur-md">
-      <Navbar />
-    </div>
+  <body class="bg-background text-white">
+    <Navbar />
+    <Drawer />
 
-    <!-- Main page -->
-    <main class="flex w-full max-w-6xl gap-32 px-6">
-      <slot />
-    </main>
+    <div class="grid min-h-screen place-items-center">
+      <main class="w-full max-w-6xl p-5 md:p-10">
+        <slot />
+      </main>
+    </div>
   </body>
 </html>
 
-<script>
-  const menuBtn = document.getElementById("menu-btn");
-  const drawer = document.getElementById("drawer");
-  const overlay = document.getElementById("overlay")
-
-  function openDrawer() {
-    drawer?.classList.remove("translate-x-full");
-    overlay?.classList.remove("hidden");
-  };
-  
-  menuBtn?.addEventListener("click", openDrawer);
-
-</script>
