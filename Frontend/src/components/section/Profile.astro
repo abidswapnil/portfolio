@@ -1,13 +1,13 @@
 ---
-import portfolio from "../data/portfolio.json";
-import me from "../assets/me.jpeg";
-import "../styles/global.css";
+import portfolio from "../../data/portfolio.json";
+import me from "../../assets/me.jpeg";
+import "../../styles/global.css";
 import { Icon } from "astro-icon/components";
 
 
 ---
-<section>
-  <div class="md:flex justify-center font-serif">
+<section id="profile" class="grid min-h-screen place-items-center p-5 md:10">
+  <div class="md:flex max-w-6xl justify-center font-serif">
     <img
         src={me.src}
         alt="Abid Shahriar"
@@ -17,12 +17,12 @@ import { Icon } from "astro-icon/components";
       <div class="text-sm md:text-lg my-1 ">Hey, I am</div>
       <div class="text-3xl" >Abid Shahriar</div>
       <span class="mt-5 typing text-2xl text-gray-300">
-        I write backend <Icon
+        I write <Icon
           name="lucide:database-zap"
           class="inline-block h-6 w-6 align-middle text-cyan-400"
         /> APIs
       </span>
-      <p class="mt-3 mx-auto text-gray-300">
+      <p class="mt-3 mx-auto text-gray-300 text-justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
      </p>  
     </div>

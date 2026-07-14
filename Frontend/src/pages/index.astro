@@ -2,10 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 import portfolio from "../data/portfolio.json";
 import { Icon } from "astro-icon/components";
-import Drawer from "../components/Drawer.astro";
-import Profile from "../components/Profile.astro";
+import Drawer from "../components/layout/Drawer.astro";
+import Profile from "../components/section/Profile.astro";
+import Experience from "../components/section/experience.astro";
+import Education from "../components/section/education.astro"
+import Projects from "../components/section/projects.astro"
+import Skills from "../components/section/skills.astro"
+import Certifications from "../components/section/certifications.astro"
+
 ---
 
 <Layout title={portfolio.profile.name}>
   <Profile />
+  <Experience />
+  <Education />
+  <Projects />
+  <Skills />
+  <Certifications />
 </Layout>

@@ -5,12 +5,12 @@
     "tagline": "Building scalable APIs with FastAPI."
   },
   "navigation": [
-    { "title": "Home", "href": "/" },
-    { "title": "Experience", "href": "experience" },
-    { "title": "Education", "href": "education" },
-    { "title": "Projects", "href": "projects" },
-    { "title": "Skills", "href": "skills" },
-    { "title": "Certifications", "href": "certifications" }
+    { "title": "Home", "href": "#profile" },
+    { "title": "Experience", "href": "#experience" },
+    { "title": "Education", "href": "#education" },
+    { "title": "Projects", "href": "#projects" },
+    { "title": "Skills", "href": "#skills" },
+    { "title": "Certifications", "href": "#certifications" }
   ],
   "skills": [
     {
