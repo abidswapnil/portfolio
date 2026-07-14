@@ -5,7 +5,7 @@
     "tagline": "Building scalable APIs with FastAPI."
   },
   "navigation": [
-    { "title": "Home", "href": "#profile" },
+    { "title": "About", "href": "#about" },
     { "title": "Experience", "href": "#experience" },
     { "title": "Education", "href": "#education" },
     { "title": "Projects", "href": "#projects" },
@@ -29,7 +29,52 @@
       "featured": true
     }
   ],
-  "experience": [],
+  "experience": [
+    {
+      "start":"JAN 2025",
+      "end":"Present",
+      "position":"Jr. Software Engineer",
+      "company":"Innofast Technologies Limited",
+      "url": "linkedin.com/company/innofast-tech?originalSubdomain=bd",
+      "stack":["Ruyby in rails", "Ruby", "RESTful API", "Postman", "Grape", "PostgreSQL", "Git", "linux", "Deploypent"],
+      "location": "House: 5/1, Block: E, Dhaka 1207",
+      "works":[
+      "Designed and implemented RESTful APIs with a clear resource-oriented architecture, following HTTP standards, reducing frontend integration issues and improving data consistency.",
+      "Decomposed complex business features into smaller, maintainable units, improving development efficiency and code clarity.",
+      "Established and consistently applied a modular API design pattern using Grape and Entities to enforce uniform response structures.",
+      "Optimized slow database queries and reduced N+1 query issues in production APIs.",
+      "Gained deep understanding of Rails components through hands-on development and maintenance.",
+      "Developed a service layer architecture and integrated third-party APIs for external data processing and system communication."
+    ]
+     },
+     {
+        "start":"AUG 2024",
+        "end":"DEC 2024",
+        "position":"Software Engineer Intern",
+        "company":"Misfit Technologies Limited",
+        "url": "https://www.linkedin.com/company/misfit-technologies-ltd/posts/?feedView=all",
+        "stack":["Ruby on rails", "Ruby", "PostgreSQL", "MySQL", "Ubuntu", "Git"],
+        "location": "47 Road No. 23, Dhaka 1212",
+        "works":[
+          "Developed Depot, a shopping cart web app from Agile Web Development with Rails, gaining hands-on experience with database linking, form handling, session management, and Rails best practices.",
+          "Built an e-commerce backend using Grape, adhering to company backend standards and best practices for API structure and response handling."
+        ]
+     },
+     {
+        "start":"AUG 2022",
+        "end":"FEB 2023",
+        "position":"Full-time Research Assistant",
+        "company":"L A Technologies",
+        "stack":["ReactJS", "Java", "Sprinboot", "GeoJSON"],
+        "location": " Khulna 9100",
+        "works":[
+          "Contributed to an open-source vehicle tracking system using React.js and Java, developing vehicle management, route creation, and scheduling features.",
+          "Managed a team of 3 members, overseeing project planning, task delegation, and timely delivery.",
+          "Created scripts to automate common tasks and improve development productivity."
+        ]
+     }
+
+  ],
   "education": [],
   "socials": {
     "github": "...",
