@@ -1,0 +1,72 @@
+
+---
+import { Icon } from "astro-icon/components";
+const { grade, lock } = Astro.props
+
+const getGrade = (grade:String) => {
+
+    if (grade == "A") {
+       return "Does it matter?";
+    } else if (grade == "B") {
+       return "Nosy! ain't you?";
+    } else if (grade == "C") {
+       return "Oh!! Desparate!";
+    } else {
+        return "So desperate!!"
+    }
+}
+
+
+---
+<div class="flex gap-2">
+	<span
+		id="grade"   
+		class="inline-flex
+		items-center
+		rounded-md
+		bg-white/10
+		blur-sm
+		px-2
+		py-1
+		text-sm
+		font-medium
+		text-cyan-300
+		shrink-0
+		transition-colors"
+	>
+	{getGrade(grade)}
+	</span>
+	<button
+	    onclick="show()"
+			id="lock"
+			class="group inline-flex items-center justify-center
+			h-7 w-7
+			rounded-md
+			bg-white/10
+			border border-white/10
+			backdrop-blur-md
+			text-white
+			transition-all duration-300
+			hover:bg-white/20
+			hover:scale-105
+			hover:shadow-lg
+			active:scale-95
+			cursor-pointer"
+			title="Unlock"
+			>
+			<Icon
+					name="twemoji:locked"
+					class="transition-transform duration-300 group-hover:rotate-6"
+			/>
+	</button>
+</div>
+
+<script>
+	const grade = document.getElementById("grade")
+	window.show = function show() {
+		console.log(grade?.innerHTML)
+	}
+</script>
+
+
+
