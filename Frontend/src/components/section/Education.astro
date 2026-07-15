@@ -13,9 +13,11 @@ import Grade from "../ui/Grade.astro";
 <section id="education" class="min-h-screen flex place-items-center">
 	<div>
 		<h2 class="text-2xl md:hidden">Education</h2>
-		{portfolio.education.map((item) => (
-			<div class="flex 
-			     flex-wrap 
+		{portfolio.education.map((item, index) => (
+			<div class="flex
+			     group
+			     flex-wrap
+					 cursor-pointer
 					 md:flex-nowrap 
 					 px-4 
 					 py-5 
@@ -27,11 +29,11 @@ import Grade from "../ui/Grade.astro";
 					 delay-100 
 					 duration-200
 					 scale-100
-					 hover:scale-105
+					 hover:scale-101
 					 ease-linear">
 				<div class="flex w-90 flex-nowrap">
 					<Icon name={`twemoji:${item.emoji}`} class="text-xl mr-2"/> 
-				  <span class="text-lg text-gray-400 text-shadow-emerald-50">{item.start} - {item.end}</span>
+				  <span class="text-md text-gray-400 text-shadow-emerald-50">{item.start} - {item.end}</span>
 				</div>
 				{/* <div class="w-90 hidden md:block">
 					<img
@@ -41,12 +43,16 @@ import Grade from "../ui/Grade.astro";
 					/>
 				</div> */}
 				<div class="flex w-full flex-col">
-					<span class="text-xl mb-1">{item.degree}</span>
+					<span class="text-xl group-hover:text-cyan-400 mb-4">{item.degree}</span>
 					<span>{item.institute}</span>
 					{item.research && (<span>Thesis: {item.research}</span>)}
 					{item.sec && (<span>Section: {item.sec}</span>)}
+					{item.courses && <span>Courses: {item.courses} </span>}
 					<span class="flex gap-2">
-						<span>{item.grade_system}</span><Grade grade = {item.grade} />
+						<span>{item.grade_system}</span>
+						{item.grade < "3.00" ? 
+						(<Grade grade = {item.grade} idx = {index}/>) : 
+						(<span>{item.grade}</span>)}
 					</span>
 				</div>
 			</div>

@@ -1,18 +1,12 @@
 
 ---
 import { Icon } from "astro-icon/components";
-const { grade, lock } = Astro.props
+const { grade, idx } = Astro.props
 
 const getGrade = (grade:String) => {
 
-    if (grade == "A") {
+    if (grade < "3.00") {
        return "Does it matter?";
-    } else if (grade == "B") {
-       return "Nosy! ain't you?";
-    } else if (grade == "C") {
-       return "Oh!! Desparate!";
-    } else {
-        return "So desperate!!"
     }
 }
 
@@ -20,7 +14,9 @@ const getGrade = (grade:String) => {
 ---
 <div class="flex gap-2">
 	<span
-		id="grade"   
+		id={"grade-" + idx}
+		data-idx={idx}
+		data-grade={grade}
 		class="inline-flex
 		items-center
 		rounded-md
@@ -30,7 +26,7 @@ const getGrade = (grade:String) => {
 		py-1
 		text-sm
 		font-medium
-		text-cyan-300
+		text-gray-300
 		shrink-0
 		transition-colors"
 	>
@@ -38,6 +34,9 @@ const getGrade = (grade:String) => {
 	</span>
 	<button
 			id="lock"
+			class="lock-btn"
+			data-idx={idx}
+			data-grade={grade}
 			class="group inline-flex items-center justify-center
 			h-7 w-7
 			rounded-md
@@ -53,32 +52,38 @@ const getGrade = (grade:String) => {
 			cursor-pointer"
 			title="Unlock"
 			>
-			<Icon
-					name="twemoji:locked"
-					class="transition-transform duration-300 group-hover:rotate-6"
-			/>
+			<span id={`locked-${idx}`} class="cursor-pointer" >
+				<Icon name="twemoji:locked"/>
+			</span>
+			<span id={`unlocked-${idx}`} class="hidden cursor-pointer">
+				<Icon name="twemoji:unlocked" />
+			</span>
 	</button>
 </div>
 
 <script>
-	const btn = document.getElementById("lock")
+	document.addEventListener("click", (event) => {
+		if (!(event.target instanceof Element)) return;
+			const button = event.target instanceof Element ? event.target.closest(".lock-btn") : null;
+			if (!(button instanceof HTMLElement)) return;
 
-	btn?.addEventListener("click", show)
+			const idx = button.dataset.idx;
+			const grade_id = "grade-" + idx;
 
-	function show() {
-			const grade = document.getElementById("grade")?.innerText
+			const grade = document.getElementById(grade_id);
+			if (!grade) return;
 
-			console.log(grade)
-		// if (grade == "A") {
-    //    console.log("Does it matter?")
-    // } else if (grade == "B") {
-    //    console.log("Nosy! ain't you?")
-    // } else if (grade == "C") {
-    //    console.log("Oh!! Desparate!")
-    // } else {
-    //    console.log("So desperate!!")
-    // }
-  };
+			const locked = document.getElementById(`locked-${idx}`);
+			const unlocked = document.getElementById(`unlocked-${idx}`);
+
+
+			if (locked){
+				grade.classList.replace("blur-sm", "blur-none");
+				locked.classList.add("hidden");
+				unlocked?.classList.remove("hidden")
+			}
+
+	});
 </script>
 
 

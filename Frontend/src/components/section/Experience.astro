@@ -8,7 +8,9 @@ import Icolink from "../ui/Icolink.astro";
 	<div>
 		<h2 class="text-2xl md:hidden py-3">Experience</h2>
 		{portfolio.experience.map((item) => (
-			<div class="flex 
+			<div class="flex
+			      group
+			      cursor-pointer
 						flex-wrap 
 						md:flex-nowrap 
 						px-4 
@@ -20,12 +22,12 @@ import Icolink from "../ui/Icolink.astro";
 						scale-100
 						hover:shadow-sm
 						hover:shadow-cyan-500/30 
-						hover:scale-105 
+						hover:scale-101
 						ease-linear 
 						hover:bg-accent/10">
-				<span class="text-lg w-90 text-gray-400 text-shadow-emerald-50">{item.start} - {item.end}</span>
+				<span class="text-md w-90 text-gray-400 text-shadow-emerald-50">{item.start} - {item.end}</span>
 				<div class="w-full">
-					<p class="flex text-xl md:gap-2">{item.position}, {item.company} 
+					<p class="flex transition-colors group-hover:text-cyan-400 text-xl md:gap-2">{item.position}, {item.company} 
             <Icolink href={item.url} />
           </p>
 					<ul class="list-disc p-5 ">

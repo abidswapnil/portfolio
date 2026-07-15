@@ -69,7 +69,7 @@
         "position":"Full-time Research Assistant",
         "company":"L A Technologies",
         "stack":["ReactJS", "Java", "Sprinboot", "GeoJSON"],
-        "location": " Khulna 9100",
+        "location": "Khulna 9100",
         "works": [
           "Contributed to an open-source vehicle tracking system using React.js and Java.",
           "Developed vehicle management, route creation, and scheduling features.",
@@ -87,9 +87,10 @@
       "end": "2022",
       "logo":"/assets/ku.png",
       "research": "Development of a System for Detection and Extraction of Camera Inserted Date from Images.",
-      "grade": "A",
+      "grade": "2.57",
       "grade_system": "CGPA:",
-      "emoji":"graduation-cap"
+      "emoji":"graduation-cap",
+      "courses":"C, Data Structures, Algorithms, Digital Logic Design, Computer Fundamentals, Numerical Methods, Computer Graphics, Pattern Recognition, Machine Learning, Other Core CSE Courses"
     },
     {
       "institute": "Khulna University, Bangladesh",
@@ -98,7 +99,7 @@
       "end":"Continue",
       "logo":"/assets/ku.png",
       "research": "",
-      "grade":  "B",
+      "grade": "Running",
       "grade_system": "CGPA:",
       "emoji":"books"
     },
@@ -110,7 +111,7 @@
       "logo":"/assets/mmcc.png",
       "research": "",
       "sec": "Science",
-      "grade": "C",
+      "grade": "5.00 (All courses)",
       "emoji":"classical-building",
       "grade_system": "GPA:"
 
@@ -123,7 +124,7 @@
       "logo":"/assets/kzs.png",
       "research": "",
       "sec": "Science",
-      "grade": "D",
+      "grade": "5.00 (All courses)",
       "grade_system": "GPA:",
       "emoji":"school"
     }

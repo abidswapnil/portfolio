@@ -15,11 +15,11 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
 
-  <body class="bg-slate-900 text-white">
+  <body class="bg-slate-900 text-gray-300 text-base scrollbar-thin">
     <Drawer />
     <div class="flex">
       <Navbar />
-      <main class="p-3 mr-3 md:w-4/5 max-w-6xl font-serif">
+      <main class="p-3 mr-3 md:w-4/5 max-w-6xl font-serif font-light">
         <slot />
       </main>
     </div>

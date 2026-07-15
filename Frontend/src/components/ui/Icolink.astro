@@ -4,5 +4,11 @@ const { href } = Astro.props
 ---
 
 <a href={href}>
-  <Icon name="lucide:external-link" class="h-5 w-5 text-accent scale-100 hover:scale-130 transition-all duration-80" />
+  <Icon name="lucide:external-link" class="h-5 
+  w-5 
+  text-accent
+  group-hover:-translate-y-1
+  group-hover:translate-x-1
+  transition-transform 
+  duration-300" />
 </a>

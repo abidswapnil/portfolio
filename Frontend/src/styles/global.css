@@ -15,9 +15,10 @@ html {
 }
 
 @font-face {
-  font-family: "Courier Prime";
-  src: url("/fonts/CourierPrime-Regular.ttf") format("truetype");
+  font-family: "Geist";
+  src: url("/fonts/Geist-VariableFont_wght.ttf") format("truetype");
 }
+
 
 @font-face {
   font-family: "Comic Neue";

@@ -1,12 +1,57 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import portfolio from "../../data/portfolio.json";
 import { Icon } from "astro-icon/components";
-import Drawer from "../../components/layout/Drawer.astro";
+import portfolio from "../../data/portfolio.json";
+import Grade from "../ui/Grade.astro";
+
+// import ku from "../../assets/ku.png";
+// import mmcc from "../../assets/mmcc.png"
+// import kzs from "../../assets/kzs.png"
+
+
 ---
 
-<section id="projects" class="grid min-h-screen place-items-center p-5 md:10">
-	<div class="md:flex max-w-6xl justify-center font-serif">
-      <h1>This is Project page</h1>
+<section id="education" class="min-h-screen flex place-items-center">
+	<div>
+		<h2 class="text-2xl md:hidden">Projects</h2>
+		{portfolio.education.map((item, index) => (
+			<div class="flex 
+			     flex-wrap
+					 cursor-pointer
+					 md:flex-nowrap 
+					 px-4 
+					 py-5 
+					 hover:bg-accent/10
+					 hover:shadow-sm
+					 hover:shadow-cyan-500/30
+					 rounded-xs
+					 transition
+					 delay-100 
+					 duration-200
+					 scale-100
+					 hover:scale-101
+					 ease-linear">
+				<div class="flex w-90 flex-nowrap">
+					<Icon name={`twemoji:${item.emoji}`} class="text-xl mr-2"/> 
+				  <span class="text-md text-gray-400 text-shadow-emerald-50">{item.start} - {item.end}</span>
+				</div>
+				{/* <div class="w-90 hidden md:block">
+					<img
+						src={item.logo}
+						alt="logo"
+						class="mx-auto h-30 w-23 object-center rounded-lg shrink-0"
+					/>
+				</div> */}
+				<div class="flex w-full flex-col">
+					<span class="text-xl mb-4">{item.degree}</span>
+					<span>{item.institute}</span>
+					{item.research && (<span>Thesis: {item.research}</span>)}
+					{item.sec && (<span>Section: {item.sec}</span>)}
+					<span class="flex gap-2">
+						<span>{item.grade_system}
+						</span><Grade grade = {item.grade} idx = {index}/>
+					</span>
+				</div>
+			</div>
+		))}	
 	</div>
 </section>
