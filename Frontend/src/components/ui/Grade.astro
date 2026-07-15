@@ -37,7 +37,6 @@ const getGrade = (grade:String) => {
 	{getGrade(grade)}
 	</span>
 	<button
-	    onclick="show()"
 			id="lock"
 			class="group inline-flex items-center justify-center
 			h-7 w-7
@@ -62,10 +61,24 @@ const getGrade = (grade:String) => {
 </div>
 
 <script>
-	const grade = document.getElementById("grade")
-	window.show = function show() {
-		console.log(grade?.innerHTML)
-	}
+	const btn = document.getElementById("lock")
+
+	btn?.addEventListener("click", show)
+
+	function show() {
+			const grade = document.getElementById("grade")?.innerText
+
+			console.log(grade)
+		// if (grade == "A") {
+    //    console.log("Does it matter?")
+    // } else if (grade == "B") {
+    //    console.log("Nosy! ain't you?")
+    // } else if (grade == "C") {
+    //    console.log("Oh!! Desparate!")
+    // } else {
+    //    console.log("So desperate!!")
+    // }
+  };
 </script>
 
 
