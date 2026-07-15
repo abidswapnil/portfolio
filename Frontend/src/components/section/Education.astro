@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import portfolio from "../../data/portfolio.json";
 import Grade from "../ui/Grade.astro";
+import SubSection from "../section/SubSection.astro";
 
 // import ku from "../../assets/ku.png";
 // import mmcc from "../../assets/mmcc.png"
@@ -21,8 +22,8 @@ import Grade from "../ui/Grade.astro";
 					 md:flex-nowrap 
 					 px-4 
 					 py-5 
-					 hover:bg-accent/10
-					 hover:shadow-sm
+					 hover:bg-accent/5
+					 hover:shadow-xs
 					 hover:shadow-cyan-500/30
 					 rounded-xs
 					 transition
@@ -32,7 +33,7 @@ import Grade from "../ui/Grade.astro";
 					 hover:scale-101
 					 ease-linear">
 				<div class="flex w-90 flex-nowrap">
-					<Icon name={`twemoji:${item.emoji}`} class="text-xl mr-2"/> 
+					<Icon name={`twemoji:${item.emoji}`} class="text-md mr-2"/> 
 				  <span class="text-md text-gray-400 text-shadow-emerald-50">{item.start} - {item.end}</span>
 				</div>
 				{/* <div class="w-90 hidden md:block">
@@ -45,14 +46,12 @@ import Grade from "../ui/Grade.astro";
 				<div class="flex w-full flex-col">
 					<span class="text-xl group-hover:text-cyan-400 mb-4">{item.degree}</span>
 					<span>{item.institute}</span>
-					{item.research && (<span>Thesis: {item.research}</span>)}
-					{item.sec && (<span>Section: {item.sec}</span>)}
-					{item.courses && <span>Courses: {item.courses} </span>}
-					<span class="flex gap-2">
-						<span>{item.grade_system}</span>
-						{item.grade < "3.00" ? 
-						(<Grade grade = {item.grade} idx = {index}/>) : 
-						(<span>{item.grade}</span>)}
+					{item.research && (<SubSection key="Thesis" value={item.research} />)}
+					{item.sec && (<SubSection key="Section" value={item.sec} />)}
+					{item.courses && (<SubSection key="Courses" value={item.courses} />)}
+					<span class="flex">
+            <SubSection key={item.grade_system} value={item.grade == "A" ?
+            <Grade grade={item.grade} idx={index} />: item.grade}/>  
 					</span>
 				</div>
 			</div>
