@@ -6,7 +6,7 @@ import Icolink from "../ui/Icolink.astro";
 
 <section id="experience" class="min-h-screen flex place-items-center">
 	<div>
-		<h2 class="text-2xl md:hidden py-3">Experience</h2>
+    <h2 class="text-2xl md:hidden font-semibold">Experience</h2>
 		{portfolio.experience.map((item) => (
 			<div class="flex
 			      group
@@ -20,16 +20,17 @@ import Icolink from "../ui/Icolink.astro";
 						delay-100 
 						duration-200 
 						scale-100
-						hover:shadow-xs
-						hover:shadow-cyan-500/30 
+            hover:ring
+						hover:ring-cyan-500/30 
 						hover:scale-101
 						ease-linear 
 						hover:bg-accent/5">
-				<span class="text-md w-90 text-gray-400 text-shadow-emerald-50">{item.start} - {item.end}</span>
+				<span class="text-md w-90 text-gray-400 text-shadow-emerald-50">{item.start} — {item.end}</span>
 				<div class="w-full">
-					<p class="flex transition-colors group-hover:text-cyan-400 text-xl md:gap-2">{item.position}, {item.company} 
+					<div class="flex group-hover:text-cyan-400">
+            <p class="flex transition-colors text-xl md:gap-2">{item.position}, {item.company} </p>
             <Icolink href={item.url} />
-          </p>
+          </div>
 					<ul class="list-disc p-5 ">
 						{item.works.map((witem) => (
 							<li> {witem} </li>

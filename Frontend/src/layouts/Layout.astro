@@ -1,6 +1,7 @@
 ---
 import Drawer from "../components/layout/Drawer.astro";
 import Navbar from "../components/layout/Navbar.astro";
+import Social from "../components/layout/Social.astro";
 import css from "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 
@@ -19,7 +20,11 @@ const { title } = Astro.props;
     <Drawer />
     <div class="flex">
       <Navbar />
-      <main class="p-3 mr-3 md:w-4/5 max-w-6xl font-serif font-light">
+      <div class="md:fixed hidden md:block bottom-4 left-4">
+        <Social />
+      </div>
+
+      <main class="p-3 mr-3 md:w-4/5 max-w-6xl font-serif font-normal">
         <slot />
       </main>
     </div>

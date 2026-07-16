@@ -13,9 +13,9 @@ import SubSection from "../section/SubSection.astro";
 
 <section id="education" class="min-h-screen flex place-items-center">
 	<div>
-		<h2 class="text-2xl md:hidden">Education</h2>
+    <h2 class="text-2xl md:hidden font-semibold">Education</h2>
 		{portfolio.education.map((item, index) => (
-			<div class="flex
+			<div class="flex 
 			     group
 			     flex-wrap
 					 cursor-pointer
@@ -23,8 +23,8 @@ import SubSection from "../section/SubSection.astro";
 					 px-4 
 					 py-5 
 					 hover:bg-accent/5
-					 hover:shadow-xs
-					 hover:shadow-cyan-500/30
+					 hover:ring
+					 hover:ring-cyan-500/30
 					 rounded-xs
 					 transition
 					 delay-100 
@@ -33,8 +33,8 @@ import SubSection from "../section/SubSection.astro";
 					 hover:scale-101
 					 ease-linear">
 				<div class="flex w-90 flex-nowrap">
-					<Icon name={`twemoji:${item.emoji}`} class="text-md mr-2"/> 
-				  <span class="text-md text-gray-400 text-shadow-emerald-50">{item.start} - {item.end}</span>
+					<Icon name={`twemoji:${item.emoji}`} class="text-md mr-2 mt-1"/> 
+				  <span class="text-md text-gray-400 text-shadow-emerald-50">{item.start} — {item.end}</span>
 				</div>
 				{/* <div class="w-90 hidden md:block">
 					<img
@@ -44,11 +44,11 @@ import SubSection from "../section/SubSection.astro";
 					/>
 				</div> */}
 				<div class="flex w-full flex-col">
-					<span class="text-xl group-hover:text-cyan-400 mb-4">{item.degree}</span>
-					<span>{item.institute}</span>
+          <span class="text-xl group-hover:text-cyan-400">{item.degree}</span>
+          <span class="mb-4 group-hover:text-sky-300">{item.institute}</span>
 					{item.research && (<SubSection key="Thesis" value={item.research} />)}
 					{item.sec && (<SubSection key="Section" value={item.sec} />)}
-					{item.courses && (<SubSection key="Courses" value={item.courses} />)}
+					{item.courses && (<SubSection key="Courses(core)" value={item.courses} />)}
 					<span class="flex">
             <SubSection key={item.grade_system} value={item.grade == "A" ?
             <Grade grade={item.grade} idx={index} />: item.grade}/>  

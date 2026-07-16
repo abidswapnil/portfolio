@@ -50,7 +50,7 @@
      {
         "start":"AUG 2024",
         "end":"DEC 2024",
-        "position":"Software Engineer Intern",
+        "position":"Intern Software Engineer",
         "company":"Misfit Technologies Limited",
         "url": "https://www.linkedin.com/company/misfit-technologies-ltd/posts/?feedView=all",
         "stack":["Ruby on rails", "Ruby", "PostgreSQL", "MySQL", "Ubuntu", "Git"],
@@ -71,6 +71,7 @@
         "stack":["ReactJS", "Java", "Sprinboot", "GeoJSON"],
         "location": "Khulna 9100",
         "works": [
+          "Worked in a project funded by Khulna University Research Cell under supervision.",
           "Contributed to an open-source vehicle tracking system using React.js and Java.",
           "Developed vehicle management, route creation, and scheduling features.",
           "Managed a team of 3, handling project planning, task delegation, and delivery.",
@@ -106,7 +107,7 @@
     },
     {
       "institute": "Govt. Mojid Memorial City College, Khulna",
-      "degree": "Higher Secondary Certificate (HSC)",
+      "degree": "Higher Secondary Certificate",
       "start":"2012",
       "end": "2014",
       "logo":"/assets/mmcc.png",
@@ -119,7 +120,7 @@
     },
     {
       "institute": "Khulna Zilla School, Khulna",
-      "degree": "Secondary School Certificate (SSC)",
+      "degree": "Secondary School Certificate",
       "start": "2010",
       "end": "2012",
       "logo":"/assets/kzs.png",
