@@ -7,23 +7,26 @@ import Social from "../../components/layout/Social.astro";
 import { Icon } from "astro-icon/components";
 
 ---
-<section id="about" class="min-h-screen flex place-items-center">
+<section id="about" class="scroll-mt-20 min-h-screen flex place-items-center">
   <div class="md:flex">
     <img
         src={me.src}
         alt="Abid Shahriar"
-        class="mx-auto h-auto w-48 rounded-xl object-cover shrink-0"
+        class="mx-auto my-auto h-48 w-48 shrink-0 rounded-full object-cover
+              border-5 hover:scale-105 transition-transform duration-300 border-cyan-900"
     />
-    <div class="md:p-4">
-      <div class="text-lg my-2">Hey, I am</div>
-      <div class="text-3xl" >Abid Shahriar </div>
-      <span class="mt-5 typing text-2xl text-gray-300">
-        I write <Icon
-          name="lucide:database-zap"
-          class="inline-block h-6 w-6 align-middle text-cyan-400"
-        /> APIs
+    <div class="md:px-10">
+      <div class="text-xl">Hi! I am</div>
+      <div class="text-6xl font-medium text-nowrap">Abid Shahriar</div>
+      <div class="mt-2 font-mono text-lg text-slate-500 cursor-default">
+        &lt;shahriarswapnil10@gmail.com&gt;
+      </div>
+      <span class="typing-wrapper">
+        <span class="mt-10 typing text-2xl text-gray-300">
+          I write backend APIs.
+        </span>
       </span>
-      <p class="mt-3 inline-flex mx-auto text-gray-300 text-justify">
+      <p class="inline-flex mt-2 mx-auto text-gray-300 text-justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       </p> 
     </div>

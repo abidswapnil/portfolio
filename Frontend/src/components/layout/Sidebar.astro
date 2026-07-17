@@ -3,45 +3,36 @@ import portfolio from "../../data/portfolio.json";
 import { Icon } from "astro-icon/components";
 ---
 
-<!-- <button id="menu-btn" class="fixed sm:hidden top-2 right-2 rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
+<button id="menu-btn" class="fixed sm:hidden top-2 right-2 rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
   <Icon name="lucide:menu" class="h-7 w-7" />
-</button> -->
+</button>
 
-<nav class="font-serif ">
+<nav class="md:p-3 md:w-sm font-serif">
 
-  <ul class="
-      fixed
-      top-0
-      left-0
-      w-full
-      bg-background/50
-      backdrop-blur-xl
-      hidden sm:flex lg:hidden
-      justify-center
-      gap-8
-      px-8
-      py-4
-    ">    
+  <ul class="fixed top-4 lg:flex flex-col hidden items-start gap-3">
     {portfolio.navigation.map((item) => (
       <li>
         <a
           href={item.href}
           class="
+            group
             relative
+            inline-flex
+            items-center
+            pl-10
             font-semibold
-            text-white/50
-            transition-all
-            duration-300
-            hover:text-white
-            after:absolute
-            after:-bottom-1
-            after:left-0
-            after:h-px
-            after:w-0
-            after:bg-cyan-400
-            after:transition-all
-            after:duration-300
-            hover:after:w-full
+            before:absolute
+            before:left-0
+            before:top-1/2
+            before:h-px
+            before:w-8
+            before:-translate-y-1/2
+            before:bg-white/50
+            before:transition-all
+            before:duration-300
+            
+            hover:before:w-14
+            hover:before:bg-white
           "
         >
           <span

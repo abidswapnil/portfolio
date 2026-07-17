@@ -11,9 +11,9 @@ import SubSection from "../section/SubSection.astro";
 
 ---
 
-<section id="education" class="min-h-screen flex place-items-center">
+<section id="education" class="scroll-mt-15 min-h-screen flex place-items-center">
 	<div>
-    <h2 class="text-2xl md:hidden font-semibold">Education</h2>
+    <h2 class="text-2xl mb-4 font-semibold">Education</h2>
 		{portfolio.education.map((item, index) => (
 			<div class="flex 
 			     group
@@ -29,7 +29,6 @@ import SubSection from "../section/SubSection.astro";
 					 transition
 					 delay-100 
 					 duration-200
-					 scale-100
 					 hover:scale-101
 					 ease-linear">
 				<div class="flex w-90 flex-nowrap">
