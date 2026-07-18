@@ -3,11 +3,11 @@ const { title, content } = Astro.props
 import { Icon } from "astro-icon/components"
 ---
 
-<div class="accordion">
-  <div class="flex rounded-t-lg bg-cyan-800/20 p-3">
-    <span class="text-cyan-400 xl:w-170">See experience on related skills</span>
+<div class="accordion cursor-pointer">
+  <div class="flex rounded-t-lg bg-cyan-800/20 p-3 border border-cyan-500/30">
+    <span class="hover:text-cyan-400 hover:scale-101 transition-all duration-300 xl:w-170">See experience on related skills</span>
 
-    <button type="button" class="toggle-btn ml-auto cursor-pointer rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
+    <button type="button" class="toggle-btn ml-auto cursor-pointer border border-cyan-500/30 rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
       <Icon name="lucide:chevron-down" class="chevron h-5 w-5 transition-transform duration-300"/>
     </button>
   </div>
