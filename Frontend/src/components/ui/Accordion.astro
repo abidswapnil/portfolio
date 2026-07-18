@@ -1,0 +1,36 @@
+---
+const { title, content } = Astro.props
+import { Icon } from "astro-icon/components"
+---
+
+<div class="accordion">
+  <div class="flex rounded-t-lg bg-cyan-800/20 p-3">
+    <span class="text-cyan-400 xl:w-170">See experience on related skills</span>
+
+    <button type="button" class="toggle-btn ml-auto cursor-pointer rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
+      <Icon name="lucide:chevron-down" class="chevron h-5 w-5 transition-transform duration-300"/>
+    </button>
+  </div>
+
+  <div class="content hidden rounded-b-lg border border-t-0 border-cyan-500/30 p-4 text-justify">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    document.querySelectorAll(".toggle-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        const accordion = button.closest(".accordion");
+        if (!accordion) return;
+        const content = accordion.querySelector(".content");
+        const chevron = accordion.querySelector(".chevron");
+        if (!content || !chevron) return;
+
+        content.classList.toggle("hidden");
+        chevron.classList.toggle("rotate-180");
+      });
+    });
+  });
+</script>

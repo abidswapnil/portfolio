@@ -1,12 +1,25 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import portfolio from "../../data/portfolio.json";
 import { Icon } from "astro-icon/components";
-import Drawer from "../../components/layout/Drawer.astro";
+import portfolio from "../../data/portfolio.json";
+import Bar from "../ui/Bar.astro";
+import Accordion from "../ui/Accordion.astro";
+
 ---
 
-<section id="skills" class="grid min-h-screen place-items-center p-5 md:10">
-	<div class="md:flex max-w-6xl justify-center font-serif">
-      <h1>This is Skill page</h1>
+<section id="skills" class="scroll-mt-15 min-h-screen flex place-items-center">
+	<div>
+    <h2 class="text-2xl mb-4 font-semibold">Skill</h2>
+    {portfolio.skills.map((skill) => (
+      <div class="flex md:px-4 py-5 flex-wrap md:flex-nowrap ">
+        <span class="text-md w-90 text-gray-400 text-shadow-emerald-50">{skill.category}</span>
+        <div class="w-full">
+          <div class="flex flex-wrap gap-2 mb-2">
+            {skill.items.join(", ")}
+          </div>
+          <Accordion />
+        </div>
+      </div>
+        
+    ))}
 	</div>
 </section>

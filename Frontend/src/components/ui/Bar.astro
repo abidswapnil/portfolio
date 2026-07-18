@@ -1,0 +1,23 @@
+---
+const { percent } = Astro.props;
+
+const widths = {
+  10: "w-8",
+  20: "w-16",
+  30: "w-24",
+  40: "w-32",
+  50: "w-40",
+  60: "w-48",
+  70: "w-56",
+  80: "w-64",
+  90: "w-72",
+  100: "w-80",
+
+};
+
+const widthClass = widths[percent] ?? "w-full";
+---
+
+<div class="h-2 w-80 rounded-full bg-slate-700 overflow-hidden">
+  <div class={`h-full ${widthClass} rounded-full bg-linear-to-r from-cyan-800 to-cyan-800`}></div>
+</div>

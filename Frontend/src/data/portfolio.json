@@ -7,26 +7,65 @@
   "navigation": [
     { "title": "About", "href": "#about" },
     { "title": "Experience", "href": "#experience" },
+    { "title": "Skills", "href": "#skills" },
     { "title": "Education", "href": "#education" },
     { "title": "Projects", "href": "#projects" },
-    { "title": "Skills", "href": "#skills" },
     { "title": "Certifications", "href": "#certifications" }
   ],
   "skills": [
     {
-      "name": "Python",
-      "level": 95
+      "category": "Frontend",
+      "experience": "Building responsive and accessible user interfaces with modern web technologies.",
+      "items": [
+        "Astro",
+        "Tailwind CSS",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "ReactJS"
+      ]
     },
     {
-      "name": "FastAPI",
-      "level": 90
-    }
-  ],
-  "projects": [
+      "category": "Backend",
+      "experience": "Developing RESTful APIs, server-side applications, and database-driven systems.",
+      "items": [
+        "Ruby on Rails",
+        "FastAPI",
+        "REST API",
+        "PostgreSQL",
+        "MySQL"
+      ]
+    },
     {
-      "title": "Portfolio API",
-      "github": "...",
-      "featured": true
+      "category": "Languages",
+      "experience": "Using multiple programming languages for web development, scripting, and problem solving.",
+      "items": [
+        "Python",
+        "Ruby",
+        "C++",
+        "C"
+      ]
+    },
+    {
+      "category": "Tools",
+      "experience": "Working with development tools for version control, API testing, Linux environments, and 3D modeling.",
+      "items": [
+        "Git",
+        "Linux",
+        "Postman",
+        "Blender"
+      ]
+    },
+    {
+      "category": "Concepts",
+      "experience": "Applying fundamental software engineering principles and best practices in application development.",
+      "items": [
+        "OOP",
+        "MVC",
+        "SQL",
+        "Authentication",
+        "Testing"
+      ]
     }
   ],
   "experience": [
@@ -103,7 +142,7 @@
       "grade": "0.00",
       "grade_system": "CGPA",
       "emoji":"books",
-      "courses":"Rsearch Methodology, Advanced SOftware Engineering"
+      "courses":"Rsearch Methodology, Advanced Software Engineering"
     },
     {
       "institute": "Govt. Mojid Memorial City College, Khulna",

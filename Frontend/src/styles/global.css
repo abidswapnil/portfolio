@@ -68,14 +68,15 @@ html {
 
 .typing-wrapper {
   display: inline-block;
-  width: 15ch; /* reserve space */
+  width: 21ch; /* reserve space */
 }
 
 .typing {
   display: inline-block;
-  width: 15ch;          /* final width */
+  width: 21ch;          /* final width */
   overflow: hidden;
   white-space: nowrap;
+  font-family: monospace;
   border-right: 3px solid var(--color-accent);
 
   animation:

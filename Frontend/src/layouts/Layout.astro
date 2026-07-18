@@ -18,7 +18,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
 
-  <body class="bg-slate-900 text-gray-300 text-base scrollbar-thin">
+  <body class="bg-slate-900 text-gray-300 text-md scrollbar-thin">
     <Drawer />
     <div class="flex">
       <Sidebar />
@@ -27,7 +27,7 @@ const { title } = Astro.props;
         <Social />
       </div>
 
-      <main class="md:ml-10 p-3 mr-3 max-w-6xl font-serif font-normal">
+      <main class="md:ml-10 p-5 mr-3 max-w-6xl font-serif antialiased md:subpixel-antialiased">
         <slot />
       </main>
     </div>
