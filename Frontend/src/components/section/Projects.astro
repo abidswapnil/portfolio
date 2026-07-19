@@ -4,11 +4,13 @@ import Badge from "../ui/Badge.astro";
 import Icolink from "../ui/Icolink.astro";
 ---
 
-<section id="projects" class="scroll-mt-15 min-h-screen flex place-items-center">
+<section id="projects" class="scroll- min-h-screen flex place-items-center">
 	<div>
     <h2 class="text-2xl mb-4 font-semibold">Projects</h2>
 		{portfolio.projects.map((item) => (
-      item
+      <div class="cursor-pointer md:px-4  py-5">
+
+      </div>
 		))}
 	</div>
 </section>
