@@ -172,7 +172,57 @@
     }
     
   ],
-  "projects":["projec 01", "project 02", "project 03"],
+  "projects":[
+    {
+      "title":"project 01",
+      "category":"Academia",
+      "description": "This is project 01",
+      "tools":["ruby on rails", "grape"],
+      "github":"..."
+    },
+    {
+      "title":"project 01",
+      "category":"Academia",
+      "description": "This is project 01",
+      "tools":["ruby on rails", "grape"],
+      "github":"..."
+    }
+  ],
+  "certifications":{
+    "description": "These certifications were earned through online courses with hands-on experience and practical assignments.",
+    "certificates":[
+      {
+        "title":"Coursera certificate",
+        "for": "Python Data Structures",
+        "href":"https://www.coursera.org/account/accomplishments/verify/QP4PEWRVWXPE?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+      },
+      {
+        "title":"Google certificate",
+        "for": "Crash Course on Python",
+        "href":"https://www.coursera.org/account/accomplishments/verify/3YQEJCV77U6P?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+      },
+      {
+        "title":"Hackerrank certificate",
+        "for": "Python (Basic) Certificate",
+        "href":"https://www.hackerrank.com/certificates/3413796308f5"
+      },
+      {
+        "title":"Coursera certificate",
+        "for": "Programming for Everybody (Getting Started with Python)",
+        "href":"https://www.coursera.org/account/accomplishments/verify/4V7Y6HVT2WY8?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+      },
+      {
+        "title":"Coursera certificate",
+        "for": "Technical Support Fundamentals",
+        "href":"https://www.coursera.org/account/accomplishments/verify/K3XF6LJDA2AL?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+      },
+      {
+        "title":"Appriciation certificate",
+        "for": "Smart veichle monitoring & tracking system for khulna university earned 2nd place in KU innovation showcasing",
+        "href":"https://drive.google.com/drive/u/1/home"
+      }
+    ]
+  },
   "socials": {
     "github": "...",
     "linkedin": "..."
