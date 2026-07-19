@@ -80,10 +80,11 @@
       "works":[
           "Designed resource-oriented RESTful APIs following HTTP standards, improving frontend integration and data consistency.",
           "Broke down complex business features into maintainable units, improving development efficiency.",
+          "Implemented bulk data import and CSV export functionality in multiple systems.",
           "Built a modular API design pattern with Grape and Entities for uniform response structures.",
           "Optimized slow queries and fixed N+1 issues in production APIs.",
           "Deepened Rails expertise through hands-on development and maintenance.",
-          "Built a service layer and integrated third-party APIs for external data processing."
+          "Built service layer and integrated third-party APIs for external data processing."
         ]
      },
      {
@@ -171,6 +172,7 @@
     }
     
   ],
+  "projects":["projec 01", "project 02", "project 03"],
   "socials": {
     "github": "...",
     "linkedin": "..."

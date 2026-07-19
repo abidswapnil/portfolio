@@ -1,17 +1,14 @@
 ---
-import { Icon } from "astro-icon/components";
 import portfolio from "../../data/portfolio.json";
-import Grade from "../ui/Grade.astro";
-
-// import ku from "../../assets/ku.png";
-// import mmcc from "../../assets/mmcc.png"
-// import kzs from "../../assets/kzs.png"
-
-
+import Badge from "../ui/Badge.astro";
+import Icolink from "../ui/Icolink.astro";
 ---
 
-<section id="projects" class="min-h-screen flex place-items-center">
+<section id="projects" class="scroll-mt-15 min-h-screen flex place-items-center">
 	<div>
-     <p>This is Project page</p>
+    <h2 class="text-2xl mb-4 font-semibold">Projects</h2>
+		{portfolio.projects.map((item) => (
+      item
+		))}
 	</div>
 </section>
