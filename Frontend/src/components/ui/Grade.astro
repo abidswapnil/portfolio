@@ -6,7 +6,7 @@ const { grade, idx } = Astro.props
 const getGrade = (grade:String) => {
 
     if (grade == "A") {
-       return "NYOB";
+       return "👽";
     }
 }
 
@@ -53,10 +53,10 @@ const getGrade = (grade:String) => {
 			title="Unlock"
 			>
 			<span id={`locked-${idx}`} class="cursor-pointer flex gap-2 text-lime-500" >
-				<Icon name="twemoji:locked"/> Unlock to see!
+				<Icon name="twemoji:locked"/>
 			</span>
 			<span id={`unlocked-${idx}`} class="hidden cursor-pointer  gap-2 text-amber-300">
-				<Icon name="twemoji:unlocked" /> Nevermind 👽
+				<Icon name="twemoji:unlocked" /> Sorry!! Not for random visitor
 			</span>
 	</button>
 </div>
