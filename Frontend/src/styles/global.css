@@ -24,6 +24,10 @@ html {
   font-family: "Comic Neue";
   src: url("/fonts/ComicNeue-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+}
 
 @theme inline {
   /* Fonts */
@@ -68,12 +72,12 @@ html {
 
 .typing-wrapper {
   display: inline-block;
-  width: 21ch; /* reserve space */
+  width: 26ch; /* reserve space */
 }
 
 .typing {
   display: inline-block;
-  width: 21ch;          /* final width */
+  width: 26 ch;          /* final width */
   overflow: hidden;
   white-space: nowrap;
   font-family: monospace;

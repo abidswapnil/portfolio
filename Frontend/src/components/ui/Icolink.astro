@@ -1,19 +1,6 @@
 ---
 import { Icon } from "astro-icon/components"
-const { href } = Astro.props
+const { class: classNames} = Astro.props
 ---
 
-<a href={href}>
-  <Icon name="lucide:arrow-up-right" 
-  class="h-4
-    shrink-0
-    w-4
-    ml-1
-    mt-1
-    inline-block align-text-bottom
-    group-hover:text-cyan-400
-    group-hover:-translate-y-1
-    group-hover:translate-x-1
-    transition-transform 
-    duration-300" />
-</a>
+<Icon name="lucide:arrow-up-right" class={classNames} />

@@ -6,8 +6,10 @@ import Social from "../../components/layout/Social.astro";
 
 import { Icon } from "astro-icon/components";
 
+const data = portfolio.profile
+
 ---
-<section id="about" class="scroll-mt-20 min-h-screen flex place-items-center">
+<section id="about" class="scroll-mt-20 min-h-screen flex place-items-center ">
   <div class="md:flex">
     <img
         src={me.src}
@@ -15,20 +17,17 @@ import { Icon } from "astro-icon/components";
         class="mx-auto my-auto h-48 w-48 shrink-0 rounded-full object-cover
               border-5 hover:scale-105 transition-transform duration-300 border-cyan-900"
     />
-    <div class="md:px-10">
-      <div class="text-md md:text-2xl">Hi! I am</div>
-      <div class="text-4xl md:text-6xl text-gray-200 tracking-wide font-semibold text-nowrap">Abid Shahriar</div>
+    <div class="md:px-10 py-5">
+      <div class="text-4xl md:text-6xl text-gray-200 tracking-wide font-semibold text-nowrap">{data.name}</div>
       <div class="mt-2 font-mono text-lg text-slate-500 cursor-default">
-        &lt;shahriarswapnil10@gmail.com&gt;
+        &lt;{data.title}&gt;
       </div>
       <span class="typing-wrapper">
         <span class="mt-5 typing text-lg text-gray-300">
-          I write backend APIs.
+          {data.tagline}
         </span>
       </span>
-      <p class="inline-flex mt-2 mx-auto font-normal text-slate-400 text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      </p> 
+      <p set:html={data.about} class="inline-block mt-2 mx-auto"></p> 
     </div>
     <div class="md:hidden mt-6 mb-6 flex justify-end">
       <Social />

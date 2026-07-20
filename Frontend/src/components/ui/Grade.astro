@@ -1,17 +1,18 @@
 
 ---
 import { Icon } from "astro-icon/components";
-const { grade, idx } = Astro.props
+const { grade, idx, msg_before, msg_after } = Astro.props
 
 const getGrade = (grade:String) => {
 
     if (grade == "A") {
        return "👽";
+    } else if (grade == "B") {
+      return "🧐";
     }
 }
-
-
 ---
+
 <div class="flex gap-2">
 	<span
 		id={"grade-" + idx}
@@ -37,26 +38,13 @@ const getGrade = (grade:String) => {
 			class="lock-btn"
 			data-idx={idx}
 			data-grade={grade}
-			class="group inline-flex items-center justify-center
-			h-7 w-7
-			rounded-md
-			bg-white/10
-			border border-white/10
-			backdrop-blur-md
-			text-white
-			transition-all duration-300
-			hover:bg-white/20
-			hover:scale-105
-			hover:shadow-lg
-			active:scale-95
-			cursor-pointer"
-			title="Unlock"
+
 			>
-			<span id={`locked-${idx}`} class="cursor-pointer flex gap-2 text-lime-500" >
-				<Icon name="twemoji:locked"/>
+			<span id={`locked-${idx}`} class="cursor-pointer flex gap-2 text-rose-700" >
+				<Icon name="twemoji:locked" class="mt-1"/> <p>{msg_before}</p>
 			</span>
-			<span id={`unlocked-${idx}`} class="hidden cursor-pointer mt-1 gap-2 text-amber-300">
-				<Icon name="twemoji:unlocked" /> Sorry!! Not for random visitor
+			<span id={`unlocked-${idx}`} class="hidden cursor-pointer gap-2 text-purple-500">
+				<Icon name="twemoji:unlocked" class="mt-1" /> <p>{msg_after}</p>
 			</span>
 	</button>
 </div>

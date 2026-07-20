@@ -13,27 +13,13 @@ import SubSection from "../section/SubSection.astro";
 
 <section id="education" class="scroll-mt-15 min-h-screen flex place-items-center">
 	<div>
-    <h2 class="text-2xl mb-4 font-semibold">Education</h2>
+    <h2 class="text-2xl mb-4 font-semibold text-slate-200">Education</h2>
 		{portfolio.education.map((item, index) => (
-			<div class="flex 
-			     group
+			<div class="flex
 			     flex-wrap
-					 cursor-pointer
 					 md:flex-nowrap 
 					 md:px-4 
-					 py-5 
-					 hover:bg-accent/5
-          hover:-translate-y-1
-          hover:ring-1
-          hover:ring-cyan-500/30
-          hover:shadow-md
-          hover:shadow-cyan-500/20
-          hover:inset-shadow-sm
-					 rounded-xs
-					 transition
-					 delay-100 
-					 duration-200
-					 ease-linear">
+					 py-5">
 				<div class="flex w-90 flex-nowrap">
 					<Icon name={`twemoji:${item.emoji}`} class="text-md mr-2 mt-1"/> 
 				  <span class="text-md text-gray-400 text-shadow-emerald-50">{item.start} — {item.end}</span>
@@ -46,15 +32,13 @@ import SubSection from "../section/SubSection.astro";
 					/>
 				</div> */}
 				<div class="flex w-full flex-col">
-          <span class="text-xl group-hover:text-cyan-400">{item.degree}</span>
-          <span class="mb-4 group-hover:text-sky-300">{item.institute}</span>
+          <span class="text-xl  text-slate-200">{item.institute}</span>
+          <span class="mb-4 text-sm text-slate-200">{item.degree}</span>
 					{item.research && (<SubSection key="Thesis" value={item.research} />)}
 					{item.sec && (<SubSection key="Section" value={item.sec} />)}
-					{item.courses && (<SubSection key="Courses(core)" value={item.courses} />)}
-					<span class="flex">
-            <SubSection key={item.grade_system} value={item.grade == "A" ?
-            <Grade grade={item.grade} idx={index} />: item.grade}/>  
-					</span>
+					{item.courses && (<SubSection key="Core courses" value={item.courses} />)}
+          <SubSection key={item.grade_system} value={item.grade == "A" || item.grade == "B" ?
+          <Grade grade={item.grade} idx={index} msg_before={item.msg_before} msg_after={item.msg_after} />: item.grade}/>  
 				</div>
 			</div>
 		))}	

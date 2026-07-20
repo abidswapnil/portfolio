@@ -1,8 +1,10 @@
 {
   "profile": {
     "name": "Abid Shahriar",
-    "title": "Backend Developer",
-    "tagline": "Building scalable APIs with FastAPI."
+    "email": "shahriarswapnil10@gmail.com",
+    "title": "Jr. Software Engineer",
+    "tagline": "I write APIs for backend.",
+    "about": "Hi! I am Abid Shahriar. I have almost 2 years of experience in writting backend API. Primarily worked with ruby on rails, now exploring the goodness of FastAPI. I know few scripting languages like <strong class='text-slate-300  text-md lg:text-lg'>Ruby</strong> & <strong class=' text-md lg:text-lg text-slate-300'>Python</strong> has a strong demand in backend engineering. I also familiar with languages like <strong class=' text-md lg:text-lg text-slate-300'>C++</strong>, <strong class=' text-md lg:text-lg text-slate-300'>C</strong>. Other than that during my academia I've built multiple projects using <strong class='text-slate-300  text-md lg:text-lg'>php</strong>. Having a  good enough knowledge on DBMS and system architecture helps me out to decompose complex backend systems. I use to solve coding problems in few online judges like <a target='blank' href='https://leetcode.com/u/Abid95/' class='font-medium no-underline text-md lg:text-lg hover:underline underline-offset-4 decoration-slate-100 transition-all hover:decoration-cyan-400 duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Leetcode</strong></a>, <a href='#' class='font-medium no-underline text-md lg:text-lg hover:underline underline-offset-4 decoration-slate-100 transition-all hover:decoration-cyan-400 duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Codeforces</strong></a>, <a target='blank' href='https://www.hackerrank.com/profile/abid10' class='font-medium no-underline text-md lg:text-lg hover:underline underline-offset-4 decoration-slate-100 transition-all hover:decoration-cyan-400 duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Hackerrank</strong></a>. Beyond this I am passionate about exploring the word of AGI."
   },
   "navigation": [
     { "title": "About", "href": "#about" },
@@ -14,20 +16,8 @@
   ],
   "skills": [
     {
-      "category": "Frontend",
-      "experience": "Building responsive and accessible user interfaces with modern web technologies.",
-      "items": [
-        "Astro",
-        "Tailwind CSS",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "ReactJS"
-      ]
-    },
-    {
       "category": "Backend",
-      "experience": "Developing RESTful APIs, server-side applications, and database-driven systems.",
+      "experience": "I built a number of projects using Ruby on Rails during my internship. Aditionally, I have experience working with Grape, a REST-like API framework. In my industry career I mostly worked with PostgreSQL, but I also worked with MySQL on bunch of other projects. Currently, I am working on a personal project using FastAPI.",
       "items": [
         "Ruby on Rails",
         "FastAPI",
@@ -38,33 +28,35 @@
     },
     {
       "category": "Languages",
-      "experience": "Using multiple programming languages for web development, scripting, and problem solving.",
+      "experience": "I have written several Python projects based on <a href='https://inventwithpython.com/bigbookpython/' target='blank'><strong class='text-slate-300 hover:text-cyan-400'>The Big Book of Small Python Projects</strong></a>. In my previous company, I worked with Grape, a Ruby-based API framework, to build RESTful APIs. During my academic years, I primarily used raw PHP to build various projects. I also use C++ for competitive programming and problem-solving, apart from that I have basic understanding of C.",
       "items": [
         "Python",
         "Ruby",
         "C++",
-        "C"
+        "C",
+        "php"
+      ]
+    },
+    {
+      "category": "Frontend",
+      "experience": "During my academic years, I used Bootstrap and CSS to build basic user interfaces for my projects. I designed my portfolio using Astro and Tailwind CSS, and working extensively with Tailwind's utility classes helped me gain a better understanding of several CSS concepts that I had previously found confusing. I also worked with React.js during my research assistantship at L A Technologies.",
+      "items": [
+        "Astro",
+        "Tailwind CSS",
+        "HTML",
+        "JavaScript",
+        "ReactJS",
+        "Bootstrap"
       ]
     },
     {
       "category": "Tools",
-      "experience": "Working with development tools for version control, API testing, Linux environments, and 3D modeling.",
+      "experience": "As a software engineer, I use Git, Postman for API testing, and Linux-based environments in my daily workflow. Outside of software development, I have spent time creating 3D stuff. Some of which are available on my <a target='blank' href='https://www.artstation.com/ubf03cb3f'><strong class='text-slate-300 hover:text-cyan-400'>ArtStation</strong></a> profile. During that time, I worked with Blender and Autodesk Maya to design hard surface.",
       "items": [
         "Git",
         "Linux",
         "Postman",
         "Blender"
-      ]
-    },
-    {
-      "category": "Concepts",
-      "experience": "Applying fundamental software engineering principles and best practices in application development.",
-      "items": [
-        "OOP",
-        "MVC",
-        "SQL",
-        "Authentication",
-        "Testing"
       ]
     }
   ],
@@ -74,7 +66,7 @@
       "end":"Present",
       "position":"Jr. Software Engineer",
       "company":"Innofast Technologies Limited",
-      "url": "linkedin.com/company/innofast-tech?originalSubdomain=bd",
+      "url": "https://innofast.tech/",
       "stack":["Ruyby in rails", "Ruby", "RESTful API", "Postman", "Grape", "PostgreSQL", "Git", "linux", "Deploypent"],
       "location": "House: 5/1, Block: E, Dhaka 1207",
       "works":[
@@ -92,7 +84,7 @@
         "end":"DEC 2024",
         "position":"Intern Software Engineer",
         "company":"Misfit Technologies Limited",
-        "url": "https://www.linkedin.com/company/misfit-technologies-ltd/posts/?feedView=all",
+        "url": "https://www.misfit.tech/",
         "stack":["Ruby on rails", "Ruby", "PostgreSQL", "MySQL", "Ubuntu", "Git"],
         "location": "47 Road No. 23, Dhaka 1212",
         "works": [
@@ -108,6 +100,7 @@
         "end":"FEB 2023",
         "position":"Full-time Research Assistant",
         "company":"L A Technologies",
+        "url":"https://www.latechnologies.net/",
         "stack":["ReactJS", "Java", "Sprinboot", "GeoJSON"],
         "location": "Khulna 9100",
         "works": [
@@ -131,6 +124,8 @@
       "grade": "A",
       "grade_system": "CGPA",
       "emoji":"graduation-cap",
+      "msg_before":"Locked!",
+      "msg_after": "Send me some money first!",
       "courses":"C, Data Structures, Algorithms, Digital Logic Design, Computer Fundamentals, Numerical Methods, Computer Graphics, Pattern Recognition, Machine Learning, Other Core CSE Courses"
     },
     {
@@ -140,9 +135,11 @@
       "end":"Continue",
       "logo":"/assets/ku.png",
       "research": "",
-      "grade": "0.00",
+      "grade": "B",
       "grade_system": "CGPA",
       "emoji":"books",
+      "msg_before":"Locked!",
+      "msg_after": "wait! why so curious?",
       "courses":"Rsearch Methodology, Advanced Software Engineering"
     },
     {

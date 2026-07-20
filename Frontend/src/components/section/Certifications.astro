@@ -7,20 +7,22 @@ import { Icon } from "astro-icon/components";
 
 <section id="certifications" class="scroll-mt-15 min-h-screen flex place-items-center">
 	<div>
-    <h2 class="text-2xl mb-4 font-semibold">Certifications</h2>
+    <h2 class="text-2xl mb-4 font-semibold text-slate-200">Certifications</h2>
     <div class="md:px-4 py-5 absolute">
       <p>{portfolio.certifications.description}</p>
       <ul class=" list-outside absolute mt-4">
         {portfolio.certifications.certificates.map((item) => (
-          <li class="group transition-colors duration-300 flex ">
-            <div class="font-semibold gap-2 flex item-center text-nowrap">
-              <Icon name="lucide:badge-check" class="h-4 w-4 mt-1 text-lime-500 " />
-              <p>{item.title} :</p>
+          <li class="group transition-colors duration-300 flex group">
+            <div class="gap-2 flex item-center text-nowrap">
+              <Icon name="lucide:award" class="h-4 w-4 mt-1 text-cyan-400 " />
+              <p>{item.title}:</p>
             </div>
-            <p class="ml-2 ordinal">
-              {item.for}
-              <Icolink href={item.href} />
-            </p>
+            <a href={item.href} target="blank">
+              <p class="ml-2 ordinal hover:text-cyan-400">
+                {item.for}
+                <Icolink class="h-4 shrink-0 w-4 ml-1 mt-1 inline-block align-text-bottom group-hover:text-cyan-400 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300"/>
+              </p>
+            </a>
           </li>
         ))}
       </ul>  

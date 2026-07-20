@@ -1,20 +1,20 @@
 ---
-const { title, content } = Astro.props
+const { title, exp } = Astro.props
 import { Icon } from "astro-icon/components"
 ---
 
-<div class="accordion">
-  <div class="header flex rounded-lg  border-cyan-500/30">
-    <span class="flex gap-2 hover:text-cyan-400 transition-all duration-300 xl:w-170">
-      <button type="button" class="toggle-btn hover:scale-120 transition-transform duration-300 cursor-pointer border border-cyan-500/30 rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
-        <Icon name="lucide:chevron-down" class="chevron h-5 w-5"/>
-      </button>
+<div class="accordion group">
+  <div class="header  flex border p-3  lg:group-hover:hover:bg-slate-800/50 rounded-lg cursor-pointer  border-cyan-500/30">
+    <span class="flex gap-2 group-hover:text-cyan-400 transition-all duration-300 xl:w-170">
       See experience on related skills
     </span>
+    <button type="button" class="ml-auto toggle-btn hover:scale-120 transition-transform duration-300 cursor-pointer border border-cyan-500/30 rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
+      <Icon name="lucide:chevron-down" class="chevron h-5 w-5"/>
+    </button>
   </div>
 
-  <div class="content hidden rounded-b-lg border border-t-0 border-cyan-500/30 p-4 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="content hidden bg-slate-800/50 rounded-b-lg border border-t-0 border-cyan-500/30 p-4">
+    <p set:html={exp} ></p>
   </div>
 </div>
 
@@ -35,11 +35,9 @@ import { Icon } from "astro-icon/components"
 
         if (isHidden) {
           header.classList.replace("rounded-t-lg", "rounded-lg");
-          header.classList.remove("border-cyan-500/30", "border", "p-3")
 
         } else {
           header.classList.replace("rounded-lg", "rounded-t-lg");
-          header.classList.add("border-cyan-500/30", "border", "p-3")
         }
 
       });
