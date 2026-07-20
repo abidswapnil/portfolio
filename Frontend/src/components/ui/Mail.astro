@@ -1,0 +1,24 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<a href="mailto:shahriarswapnil10@gmail.com">
+  <button id="send" class="button inline-flex shadow-rose-800 transition-transform duration-300 shadow-md h-10 w-40 border border-rose-500/30 cursor-pointer items-center justify-between rounded-lg bg-slate-200/10 px-3">
+    <span class="text-md">Drop a Email</span>
+    <Icon name="lucide:mail-open" class="h-5 w-5 text-red-700" />
+  </button>
+</a>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const btn = document.querySelector(".button");
+
+    btn?.addEventListener("click", () => {
+      btn.classList.add("translate-y-1");
+
+      setTimeout(() => {
+        btn.classList.remove("translate-y-1");
+      }, 300);
+    });
+  });
+</script>

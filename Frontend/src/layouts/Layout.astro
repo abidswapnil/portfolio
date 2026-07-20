@@ -2,6 +2,7 @@
 import Drawer from "../components/layout/Drawer.astro";
 import Sidebar from "../components/layout/Sidebar.astro";
 import Navbar from "../components/layout/Navbar.astro";
+import Footer from "../components/layout/Footer.astro";
 
 import Social from "../components/layout/Social.astro";
 import css from "../styles/global.css";
@@ -18,9 +19,9 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
 
-  <body class="bg-slate-900 text-gray-300 text-md scrollbar-thin">
+  <body class="bg-slate-900 content-end relative text-gray-300 text-md scrollbar-thin">
     <Drawer />
-    <div class="flex">
+    <div class="min-h-screen flex">
       <Sidebar />
       <Navbar />
       <div class="md:fixed hidden bottom-4 left-4">
@@ -42,6 +43,7 @@ const { title } = Astro.props;
              md:subpixel-antialiased">
         <slot />
       </main>
+      <!-- <Footer /> -->
     </div>
   </body>
 </html>
