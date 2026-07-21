@@ -1,16 +1,19 @@
 ---
 import portfolio from "../../data/portfolio.json";
 import Badge from "../ui/Badge.astro";
+import Card from "../ui/Card.astro";
 import Icolink from "../ui/Icolink.astro";
 ---
 
 <section id="projects" class="scroll- min-h-screen flex place-items-center">
 	<div>
     <h2 class="text-2xl mb-4 font-semibold text-slate-200">Projects</h2>
-		{portfolio.projects.map((item) => (
-      <div class="cursor-pointer md:px-4  py-5">
-
-      </div>
-		))}
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">      
+      {portfolio.projects.map((item) => (
+        <li class="ml-4 mt-5">
+          <Card data={item} />
+        </li>
+      ))}
+    </ul>
 	</div>
 </section>

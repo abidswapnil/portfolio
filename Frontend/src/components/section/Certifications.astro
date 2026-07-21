@@ -19,10 +19,10 @@ import Social from "../layout/Social.astro";
               <Icon name="lucide:award" class="h-4 w-4 mt-1 text-cyan-400 " />
               <p>{item.title}:</p>
             </div>
-            <a href={item.href} target="blank">
-              <p class="ml-2 ordinal hover:text-cyan-400">
+            <a href={item.href} class="inline hover:underline hover:text-cyan-400" target="blank">
+              <p class="ml-2 ordinal ">
                 {item.for}
-                <Icolink class="h-4 shrink-0 w-4 ml-1 mt-1 inline-block align-text-bottom group-hover:text-cyan-400 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300"/>
+                <Icolink class="h-4 inline align-text-bottom shrink-0 w-4 ml-1 mt-1  group-hover:text-cyan-400 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300"/>
               </p>
             </a>
           </li>

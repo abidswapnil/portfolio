@@ -4,14 +4,14 @@
     "email": "shahriarswapnil10@gmail.com",
     "title": "Jr. Software Engineer",
     "tagline": "I write APIs for backend.",
-    "about": "Hi! I am Abid Shahriar. I have almost 2 years of experience in writting backend API. Primarily worked with ruby on rails, now exploring the goodness of FastAPI. I know few scripting languages like <strong class='text-slate-300  text-md lg:text-lg'>Ruby</strong> & <strong class=' text-md lg:text-lg text-slate-300'>Python</strong> has a strong demand in backend engineering. I also familiar with languages like <strong class=' text-md lg:text-lg text-slate-300'>C++</strong>, <strong class=' text-md lg:text-lg text-slate-300'>C</strong>. Other than that during my academia I've built multiple projects using <strong class='text-slate-300  text-md lg:text-lg'>php</strong>. Having a  good enough knowledge on DBMS and system architecture helps me out to decompose complex backend systems. I use to solve coding problems in few online judges like <a target='blank' href='https://leetcode.com/u/Abid95/' class='font-medium no-underline text-md lg:text-lg hover:underline underline-offset-4 decoration-slate-100 transition-color hover:decoration-cyan-400 duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Leetcode</strong></a>, <a href='#' class='font-medium no-underline text-md lg:text-lg hover:underline underline-offset-4 decoration-slate-100 transition-color hover:decoration-cyan-400 duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Codeforces</strong></a>, <a target='blank' href='https://www.hackerrank.com/profile/abid10' class='font-medium no-underline text-md lg:text-lg hover:underline underline-offset-4 decoration-slate-100 transition-color hover:decoration-cyan-400 duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Hackerrank</strong></a>. Beyond this I am passionate about exploring the word of AGI."
+    "about": "Hi! I am Abid Shahriar. I have almost 2 years of experience in writting backend API. Primarily worked with ruby on rails, now exploring the goodness of FastAPI. I know few scripting languages like <strong class='text-slate-300'>Ruby</strong> & <strong class='text-slate-300'>Python</strong> has a strong demand in backend engineering. I also familiar with languages like <strong class='text-slate-300'>C++</strong>, <strong class='text-slate-300'>C</strong>. Other than that during my academia I've built multiple projects using <strong class='text-slate-300'>php</strong>. Having a  good enough knowledge on DBMS and system architecture helps me out to decompose complex backend systems. I use to solve coding problems in few online judges like <a target='blank' href='https://leetcode.com/u/Abid95/' class='hover:text-cyan-400 hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Leetcode</strong></a>, <a href='#' class='font-medium  hover:text-cyan-400 hover:underline underline-offset-4 transition-color  duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Codeforces</strong></a>, <a target='blank' href='https://www.hackerrank.com/profile/abid10' class='hover:text-cyan-400  hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Hackerrank</strong></a>. Beyond this I am passionate about exploring the word of AGI."
   },
   "navigation": [
     { "title": "About", "href": "#about" },
     { "title": "Experience", "href": "#experience" },
     { "title": "Skills", "href": "#skills" },
-    { "title": "Education", "href": "#education" },
     { "title": "Projects", "href": "#projects" },
+    { "title": "Education", "href": "#education" },
     { "title": "Certifications", "href": "#certifications" }
   ],
   "skills": [
@@ -28,7 +28,7 @@
     },
     {
       "category": "Languages",
-      "experience": "I have written several Python projects based on <a href='https://inventwithpython.com/bigbookpython/' target='blank'><strong class='text-slate-300 hover:text-cyan-400'>The Big Book of Small Python Projects</strong></a>. In my previous company, I worked with Grape, a Ruby-based API framework, to build RESTful APIs. During my academic years, I primarily used raw PHP to build various projects. I also use C++ for competitive programming and problem-solving, apart from that I have basic understanding of C.",
+      "experience": "I have written several Python projects based on <a href='https://inventwithpython.com/bigbookpython/' target='blank'><strong class='text-slate-300 hover:underline hover:text-cyan-400'>The Big Book of Small Python Projects</strong></a>. In my previous company, I worked with Grape, a Ruby-based API framework, to build RESTful APIs. During my academic years, I primarily used raw PHP to build various projects. I also use C++ for competitive programming and problem-solving, apart from that I have basic understanding of C.",
       "items": [
         "Python",
         "Ruby",
@@ -51,7 +51,7 @@
     },
     {
       "category": "Tools",
-      "experience": "As a software engineer, I use Git, Postman for API testing, and Linux-based environments in my daily workflow. Outside of software development, I have spent time creating 3D stuff. Some of which are available on my <a target='blank' href='https://www.artstation.com/ubf03cb3f'><strong class='text-slate-300 hover:text-cyan-400'>ArtStation</strong></a> profile. During that time, I worked with Blender and Autodesk Maya to design hard surface.",
+      "experience": "As a software engineer, I use Git, Postman for API testing, and Linux-based environments in my daily workflow. Outside of software development, I have spent time creating 3D stuff. Some of which are available on my <a target='blank' href='https://www.artstation.com/ubf03cb3f'><strong class='text-slate-300 '>ArtStation</strong></a> profile. During that time, I worked with Blender and Autodesk Maya to design hard surface.",
       "items": [
         "Git",
         "Linux",
@@ -171,18 +171,68 @@
   ],
   "projects":[
     {
-      "title":"project 01",
-      "category":"Academia",
-      "description": "This is project 01",
+      "title":"Labbaik",
+      "category":"Company",
+      "date":"12/12/2025",
+      "description": "This is a comprehensive pilgrim companion app by <a target='blank' class='hover:underline hover:text-cyan-400 font-semibold' href='https://www.hajj.gov.bd/hajj-initiatives/labbayk-app'>Ministry of Religious Affairs of Bangladesh</a> to facilitate BD pilgrims. I worked as a backend developer in this app the before the release of first version. Key features of this app are providig Quran, Hadith library, location tracking, pilgrim health profile and many others. This app has been crossed <strong>50k+</strong> downloads.",
       "tools":["ruby on rails", "grape"],
-      "github":"..."
+      "github":"...",
+      "icon":"plane-takeoff"
     },
     {
-      "title":"project 01",
+      "title":"Amar Shodai",
+      "date":"12/12/2025",
+      "category":"Company",
+      "description": "Amar shodai is a local e-commerce platform that enables customers to order groceries and everyday essentials online. It offers a wide range of products, including fresh vegetables, fruits, medicines, and household items, with reliable doorstep delivery.",
+      "tools":["ruby on rails", "grape"],
+      "github":"...",
+      "icon":"shopping-bag"
+    },
+    {
+      "title":"Smart Vehicle tracking & monitoring system for Khulna University",
+      "date":"12/12/2025",
+      "category":"Research",
+      "description": "This is project 01",
+      "tools":["ruby on rails", "grape"],
+      "github":"...",
+      "icon":"map-pinned"
+    },
+  
+    {
+      "title":"Conference Management System",
+      "date":"12/12/2025",
       "category":"Academia",
       "description": "This is project 01",
       "tools":["ruby on rails", "grape"],
-      "github":"..."
+      "github":"...",
+      "icon":"calendar-check-2"
+    },
+    {
+      "title":"Restaurant management system",
+      "date":"12/12/2025",
+      "category":"Academia",
+      "description": "This is project 01",
+      "tools":["ruby on rails", "grape"],
+      "github":"...",
+      "icon":"utensils"
+    },
+    {
+      "title":"Pymer (Desktop timer)",
+      "date":"12/12/2025",
+      "category":"Personal",
+      "description": "This is project 01",
+      "tools":["ruby on rails", "grape"],
+      "github":"...",
+      "icon":"timer"
+    },
+    {
+      "title":"Portfolio",
+      "date":"12/12/2025",
+      "category":"Personal",
+      "description": "This is project 01",
+      "tools":["ruby on rails", "grape"],
+      "github":"...",
+      "icon":"briefcase-business"
     }
   ],
   "certifications":{
