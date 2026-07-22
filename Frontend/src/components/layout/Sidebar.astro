@@ -3,7 +3,7 @@ import portfolio from "../../data/portfolio.json";
 import { Icon } from "astro-icon/components";
 ---
 
-<button id="menu-btn" class="fixed sm:hidden top-2 right-2 z-1 rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
+<button id="menu-button" class="fixed sm:hidden top-2 right-2 z-1 rounded-full bg-white/10 p-1 text-white backdrop-blur-md">
   <Icon name="lucide:menu" class="h-7 w-7" />
 </button>
 
@@ -26,13 +26,12 @@ import { Icon } from "astro-icon/components";
             before:top-1/2
             before:h-px
             before:w-8
-            before:-translate-y-1/2
             before:bg-white/50
             before:transition-transform
             before:duration-500
             delay-200
             
-            hover:before:w-14
+            hover:before:w-10
             hover:before:bg-white
           "
         >

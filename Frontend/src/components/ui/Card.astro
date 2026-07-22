@@ -5,7 +5,7 @@ import { Icon } from "astro-icon/components";
 ---
 
 <a href={data.href || data.github}  target="_blank">
-  <div class="h-100 md:h-80 p-5 
+  <div class="h-100 p-5 
       group
       relative
       border-b-2
@@ -26,10 +26,10 @@ import { Icon } from "astro-icon/components";
       </div>
       <hr class="h-px w-full text-slate-700" />
     </header>
-    <p class="text-slate-300 text-md mb-2 font-semibold">{data.title}</p>
+    <p class="text-slate-300 text-md mb-2 mt-2 font-semibold">{data.title}</p>
 
     <div class="mt-2 w-full mb-4">
-      <p set:html={data.description} class="text-sm text-slate-300 "></p>
+      <p set:html={data.description} class="text-sm text-slate-300/80 "></p>
     </div>
     <footer class="absolute bottom-3 left-5 right-5">
       <div class="text-slate-400/70 text-sm flex items-center">

@@ -13,7 +13,7 @@ import portfolio from "../../data/portfolio.json";
     <!-- Drawer Items -->
   <nav>
     <button
-      id="close-btn"
+      id="close-button"
       class="absolute top-3 right-3 z-1 rounded-full bg-white/10 p-1 text-white backdrop-blur-md"
     >
       <Icon name="lucide:x" class="h-7 w-7" />
@@ -35,8 +35,8 @@ import portfolio from "../../data/portfolio.json";
 <script>
   const links = document.querySelectorAll(".link")
   const drawer = document.getElementById("drawer")
-  const closeBtn = document.getElementById("close-btn");
-  const menuBtn = document.getElementById("menu-btn")
+  const close_button = document.getElementById("close-button");
+  const menu_button = document.getElementById("menu-button")
 
   function openDrawer() {
     drawer?.classList.remove("translate-x-full");
@@ -46,8 +46,8 @@ import portfolio from "../../data/portfolio.json";
     drawer?.classList.add("translate-x-full");
   };
   
-  menuBtn?.addEventListener("click", openDrawer);
-  closeBtn?.addEventListener("click", closeDrawer);
+  menu_button?.addEventListener("click", openDrawer);
+  close_button?.addEventListener("click", closeDrawer);
   
   links.forEach((link) => {
     link.addEventListener("click", (e) => {

@@ -27,6 +27,12 @@ html {
 @font-face {
   font-family: "Inter";
   src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-display: swap;
+
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
 }
 
 @theme inline {
