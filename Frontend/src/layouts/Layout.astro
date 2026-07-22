@@ -19,7 +19,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
 
-  <body class="bg-slate-900 content-end relative text-gray-300 text-md scrollbar-thin">
+  <body class="bg-slate-900 text-gray-300 text-md scrollbar-thin">
     <Drawer />
     <div class="min-h-screen flex">
       <Sidebar />
@@ -43,8 +43,8 @@ const { title } = Astro.props;
              md:subpixel-antialiased">
         <slot />
       </main>
-      <!-- <Footer /> -->
     </div>
+    <Footer />
   </body>
 </html>
 
