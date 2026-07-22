@@ -4,36 +4,38 @@ import { Icon } from "astro-icon/components";
 
 ---
 
+<a href={data.href || data.github}  target="blank">
+  <div class="h-100 md:h-75 p-5 
+      group
+      relative
+      border-b-2
+      flex-1
+      border-b-white/10
+      border-r-2
+      border-r-white/10
+      rounded-sm
+      bg-card/50
+      transition-transform 
+      duration-300 
+      hover:-translate-y-1 
+      cursor-pointer ">
+    <header>
+      <div class="flex justify-between">
+        <span class="text-xs text-slate-400/50 font-semibold font-mono rounded-sm">{data.date} </span>
+        <span class="text-sm text-slate-400/50 font-semibold rounded-sm">{data.category}</span>
+      </div>
+      <hr class="h-px w-full text-slate-700" />
+    </header>
+    <p class="text-slate-300 text-md mb-2 font-semibold">{data.title}</p>
 
-<div class="h-70 p-5 
-    bg-card
-    relative
-    border-b-2
-    flex-1
-    border-b-slate-600
-    border-s-2
-    border-s-slate-600
-    rounded-sm
-    transition-transform 
-    duration-300 
-    hover:-translate-y-1 
-    cursor-pointer ">
-  <header>
-    <div class="flex justify-between">
-      <span class="text-xs text-slate-400/50 font-semibold font-mono rounded-sm">{data.date} </span>
-      <span class="text-sm text-slate-400/50 font-semibold rounded-sm">{data.category}</span>
+    <div class="mt-2 w-full mb-4">
+      <p set:html={data.description} class="text-sm text-slate-300 "></p>
     </div>
-    <hr class="h-px w-full text-slate-700" />
-  </header>
-  <p class="text-slate-300 text-md mb-2 font-semibold">{data.title}</p>
-
-  <div class="mt-2 w-full">
-    <p set:html={data.description} class="text-sm text-slate-300 "></p>
+    <footer class="absolute bottom-3 left-5 right-5">
+      <div class="text-slate-400/70 text-sm flex items-center">
+        <span>{data.tools.join(", ")}</span>
+        <Icon name={`lucide:${data.icon}`} class="h-6 w-6 ml-auto group-hover:text-cyan-400 group-hover:duration-300 group-hover:transition-colors" />
+      </div>
+    </footer>
   </div>
-  <footer class="absolute bottom-3 left-5 right-5">
-    <div class="text-slate-400/70 text-sm flex items-center">
-      <span>{data.tools.join(", ")}</span>
-      <Icon name={`lucide:${data.icon}`} class="h-6 w-6 ml-auto text-cyan-400" />
-    </div>
-  </footer>
-</div>  
+</a>

@@ -10,9 +10,11 @@ import Icolink from "../ui/Icolink.astro";
     <h2 class="text-2xl mb-4 font-semibold text-slate-200">Projects</h2>
     <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">      
       {portfolio.projects.map((item) => (
-        <li class="ml-4 mt-5">
-          <Card data={item} />
-        </li>
+        <div class="px-2 py-5 ">
+          <li>
+            <Card data={item} />
+          </li>
+        </div>
       ))}
     </ul>
 	</div>

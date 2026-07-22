@@ -4,7 +4,7 @@
     "email": "shahriarswapnil10@gmail.com",
     "title": "Jr. Software Engineer",
     "tagline": "I write APIs for backend.",
-    "about": "Hi! I am Abid Shahriar. I have almost 2 years of experience in writting backend API. Primarily worked with ruby on rails, now exploring the goodness of FastAPI. I know few scripting languages like <strong class='text-slate-300'>Ruby</strong> & <strong class='text-slate-300'>Python</strong> has a strong demand in backend engineering. I also familiar with languages like <strong class='text-slate-300'>C++</strong>, <strong class='text-slate-300'>C</strong>. Other than that during my academia I've built multiple projects using <strong class='text-slate-300'>php</strong>. Having a  good enough knowledge on DBMS and system architecture helps me out to decompose complex backend systems. I use to solve coding problems in few online judges like <a target='blank' href='https://leetcode.com/u/Abid95/' class='hover:text-cyan-400 hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Leetcode</strong></a>, <a href='#' class='font-medium  hover:text-cyan-400 hover:underline underline-offset-4 transition-color  duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Codeforces</strong></a>, <a target='blank' href='https://www.hackerrank.com/profile/abid10' class='hover:text-cyan-400  hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Hackerrank</strong></a>. Beyond this I am passionate about exploring the word of AGI."
+    "about": "Hi! I am Abid Shahriar. I have almost 2 years of experience in writting backend API. Primarily worked with ruby on rails, now exploring the goodness of FastAPI. I know few scripting languages like <strong class='text-slate-300'>Ruby</strong> & <strong class='text-slate-300'>Python</strong> has a strong demand in backend engineering. I also familiar with languages like <strong class='text-slate-300'>C++</strong>, <strong class='text-slate-300'>C</strong>. Other than that during my academia I've built multiple projects using <strong class='text-slate-300'>PHP</strong>. Having a  good enough knowledge on DBMS and system architecture helps me out to decompose complex backend systems. I use to solve coding problems in few online judges like <a target='blank' href='https://leetcode.com/u/Abid95/' class='hover:text-cyan-400 hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Leetcode</strong></a>, <a href='#' class='font-medium  hover:text-cyan-400 hover:underline underline-offset-4 transition-color  duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Codeforces</strong></a>, <a target='blank' href='https://www.hackerrank.com/profile/abid10' class='hover:text-cyan-400  hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Hackerrank</strong></a>. Beyond this I am passionate about exploring the word of AGI."
   },
   "navigation": [
     { "title": "About", "href": "#about" },
@@ -173,66 +173,61 @@
     {
       "title":"Labbaik",
       "category":"Company",
-      "date":"12/12/2025",
+      "date":"2025",
       "description": "This is a comprehensive pilgrim companion app by <a target='blank' class='hover:underline hover:text-cyan-400 font-semibold' href='https://www.hajj.gov.bd/hajj-initiatives/labbayk-app'>Ministry of Religious Affairs of Bangladesh</a> to facilitate BD pilgrims. I worked as a backend developer in this app the before the release of first version. Key features of this app are providig Quran, Hadith library, location tracking, pilgrim health profile and many others. This app has been crossed <strong>50k+</strong> downloads.",
-      "tools":["ruby on rails", "grape"],
+      "tools":["Ruby on rails", "Grape", "PostgreSQL"],
       "github":"...",
-      "icon":"plane-takeoff"
+      "icon":"plane-takeoff",
+      "href": "https://play.google.com/store/search?q=labbaik&c=apps&androidId=105411843412945873618"
     },
     {
       "title":"Amar Shodai",
-      "date":"12/12/2025",
+      "date":"2025",
       "category":"Company",
       "description": "Amar shodai is a local e-commerce platform that enables customers to order groceries and everyday essentials online. It offers a wide range of products, including fresh vegetables, fruits, medicines, and household items, with reliable doorstep delivery.",
-      "tools":["ruby on rails", "grape"],
+      "tools":["Ruby on rails", "Grape", "PostgreSQL"],
       "github":"...",
-      "icon":"shopping-bag"
+      "icon":"shopping-cart",
+      "href":"https://amar-shodai.com/"
     },
     {
       "title":"Smart Vehicle tracking & monitoring system for Khulna University",
-      "date":"12/12/2025",
+      "date":"2022",
       "category":"Research",
-      "description": "This is project 01",
-      "tools":["ruby on rails", "grape"],
+      "description": "Smart vehicle tracking Contributed to a vehicle tracking and monitoring platform that provides real-time GPS tracking, route replay, trip history, and customizable fuel reporting. Our customized solution got 2nd palce in <a target='blank' class='font-semibold hover:underline hover:text-cyan-400' href='https://synergyx2024.cseku.ac.bd/innovation_showcase'>Synergy X Innovation Showcase 2024</a> held in Khulna University.",
+      "tools":["ReactJS", "Javascript"],
       "github":"...",
-      "icon":"map-pinned"
+      "icon":"map-pinned",
+      "href":"https://tracking.latechnologies.net/login"
     },
   
     {
       "title":"Conference Management System",
-      "date":"12/12/2025",
+      "date":"2018",
       "category":"Academia",
-      "description": "This is project 01",
-      "tools":["ruby on rails", "grape"],
-      "github":"...",
-      "icon":"calendar-check-2"
+      "description": "Conference Management System is a web application that streamlines the academic conference workflow. It supports user authentication, paper submission, peer review, notifications, and role-based access for students, authors, and reviewers. This project was developed as part of the Web Programming Laboratory course.",
+      "tools":["PHP", "MySQL"],
+      "github":"https://github.com/abidswapnil/cseku_wpl_2018_conference_management",
+      "href": "",
+      "icon":"square-arrow-out-up-right"
     },
     {
       "title":"Restaurant management system",
-      "date":"12/12/2025",
+      "date":"2019",
       "category":"Academia",
-      "description": "This is project 01",
-      "tools":["ruby on rails", "grape"],
+      "description": "It was more of a event management web application. People can create event and reserve restaurant through this application managed by an admin. This project was developerd as part of Database Management System Laboratory course.",
+      "tools":["PHP", "MySQL"],
       "github":"...",
-      "icon":"utensils"
+      "icon":"square-arrow-out-up-right"
     },
     {
       "title":"Pymer (Desktop timer)",
-      "date":"12/12/2025",
+      "date":"2026",
       "category":"Personal",
-      "description": "This is project 01",
-      "tools":["ruby on rails", "grape"],
-      "github":"...",
-      "icon":"timer"
-    },
-    {
-      "title":"Portfolio",
-      "date":"12/12/2025",
-      "category":"Personal",
-      "description": "This is project 01",
-      "tools":["ruby on rails", "grape"],
-      "github":"...",
-      "icon":"briefcase-business"
+      "description": "A countdown timer with Start, pause, and reset controls time's up alarm, always-on-top mode clean and minimal user interface lightweight that has been developed out of my need. It is available on <a target='blank' href='https://snapcraft.io/pymer' class = 'font-semibold hover:underline hover:text-cyan-400'>Snap store</a>.",
+      "tools":["PyQt5"],
+      "github":"https://github.com/abidswapnil/Pymer-release",
+      "icon":"square-arrow-out-up-right"
     }
   ],
   "certifications":{
