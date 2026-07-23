@@ -4,7 +4,7 @@
     "email": "shahriarswapnil10@gmail.com",
     "title": "Jr. Software Engineer",
     "tagline": "I write APIs for backend.",
-    "about": "Hi! I am Abid Shahriar. I have almost 2 years of experience in writting backend API. I am familiar with <strong class='text-slate-300'>Ruby</strong>, <strong class='text-slate-300'>Python</strong>, <strong class='text-slate-300'>C++</strong>, <strong class='text-slate-300'>C</strong>. During my academia I've built multiple projects using <strong class='text-slate-300'>PHP</strong>. I have good enough knowledge on DBMS and system architecture, which helps me out to decompose complex backend systems. I am adaptable and naturally inclined toward learning new technologies. I use to solve coding problems on online judges. I recommend to check my <a target='_blank' href='https://leetcode.com/u/Abid95/' class='hover:text-cyan-400 hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Leetcode</strong></a>, <a href='#' class=' hover:text-cyan-400 hover:underline underline-offset-4 transition-color  duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Codeforces</strong></a>, <a target='_blank' href='https://www.hackerrank.com/profile/abid10' class='hover:text-cyan-400  hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Hackerrank</strong></a> profile. Beyond this I am passionate about exploring the world of AGI. Oh, once I used to make 3D stuff. I did that for a short time. Also check my <a target='_blank' href='https://www.artstation.com/ubf03cb3f' class='hover:text-cyan-400  hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Artstation</strong></a> profile if you want."  },
+    "about": "Hi! I am Abid Shahriar. I have almost 2 years of experience in writting backend API. I am familiar with <strong class='text-slate-300'>Ruby</strong>, <strong class='text-slate-300'>Python</strong>, <strong class='text-slate-300'>C++</strong>, <strong class='text-slate-300'>C</strong>. During my academia I've built multiple projects using <strong class='text-slate-300'>PHP</strong>. I have good enough knowledge of DBMS and system architecture, which helps me out to decompose complex backend systems. I am adaptable and naturally inclined toward learning new technologies. I use to solve coding problems on online judges. I recommend to check my <a target='_blank' href='https://leetcode.com/u/Abid95/' class='hover:text-cyan-400 hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Leetcode</strong></a>, <a target='_blank' href='https://codeforces.com/profile/cosmicnewbie' class=' hover:text-cyan-400 hover:underline underline-offset-4 transition-color  duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Codeforces</strong></a>, <a target='_blank' href='https://www.hackerrank.com/profile/abid10' class='hover:text-cyan-400  hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Hackerrank</strong></a> profile. Beyond this I am passionate about exploring the world of AGI. Oh! once I used to make 3D stuff. I did that for a short time. Also check my <a target='_blank' href='https://www.artstation.com/ubf03cb3f' class='hover:text-cyan-400  hover:underline underline-offset-4 transition-color duration-200'><strong class='text-slate-300 hover:text-cyan-400'>Artstation</strong></a> profile if you want to."  },
   "navigation": [
     { "title": "About", "href": "#about" },
     { "title": "Experience", "href": "#experience" },
@@ -16,7 +16,7 @@
   "skills": [
     {
       "category": "Languages",
-      "experience": "I have written several Python projects based on <a href='https://inventwithpython.com/bigbookpython/' target='_blank'><strong class='text-slate-300 hover:underline hover:text-cyan-400'>The Big Book of Small Python Projects</strong></a>. In my previous company, I worked with Grape, a Ruby-based API framework, to build RESTful APIs. During my academic years, I primarily used raw PHP to build various web applications. I also use C++ for competitive programming and problem-solving, apart from that I have basic understanding of C.",
+      "experience": "I have written several Python projects based on <a href='https://inventwithpython.com/bigbookpython/' target='_blank'><strong class='text-slate-300 hover:underline hover:text-cyan-400'>The Big Book of Small Python Projects</strong></a>. In my previous company, I worked with Grape, a Ruby-based API framework, to build RESTful APIs. During my academic years, I primarily used raw PHP to build various web applications. I use C++ during competitive programming and problem-solving, apart from that I have basic understanding of C.",
       "items": [
         "Python",
         "Ruby",
@@ -100,7 +100,7 @@
         "position":"Full-time Research Assistant",
         "company":"L A Technologies",
         "url":"https://www.latechnologies.net/",
-        "stack":["ReactJS", "Java", "Sprinboot", "GeoJSON"],
+        "stack":["ReactJS", "Java", "GeoJSON"],
         "location": "Khulna 9100",
         "works": [
           "Worked in a project funded by Khulna University Research Cell under supervision.",
@@ -115,6 +115,20 @@
   "education": [
     {
       "institute": "Khulna University, Bangladesh",
+      "degree": "Master of Science in Computer Science & Engineering",
+      "start": "2023",
+      "end":"Present",
+      "logo":"/assets/ku.png",
+      "research": "",
+      "grade": "B",
+      "grade_system": "CGPA",
+      "emoji":"books",
+      "msg_before":"Locked!",
+      "msg_after": "wait! why so curious?",
+      "courses":"Rsearch Methodology, Advanced Software Engineering"
+    },
+    {
+      "institute": "Khulna University, Bangladesh",
       "degree": "Bachelor of Science in Computer Science & Engineering",
       "start":"2015", 
       "end": "2022",
@@ -126,20 +140,6 @@
       "msg_before":"Locked!",
       "msg_after": "Send me some money first!",
       "courses":"C, Data Structures, Algorithms, Digital Logic Design, Computer Fundamentals, Numerical Methods, Computer Graphics, Pattern Recognition, Machine Learning, Other Core CSE Courses"
-    },
-    {
-      "institute": "Khulna University, Bangladesh",
-      "degree": "Master of Science in Computer Science & Engineering",
-      "start": "2023",
-      "end":"Continue",
-      "logo":"/assets/ku.png",
-      "research": "",
-      "grade": "B",
-      "grade_system": "CGPA",
-      "emoji":"books",
-      "msg_before":"Locked!",
-      "msg_after": "wait! why so curious?",
-      "courses":"Rsearch Methodology, Advanced Software Engineering"
     },
     {
       "institute": "Govt. Mojid Memorial City College, Khulna",
@@ -176,7 +176,7 @@
       "description": "This is a comprehensive pilgrim companion app by <a target='_blank' class='hover:underline hover:text-cyan-400 font-semibold' href='https://www.hajj.gov.bd/hajj-initiatives/labbayk-app'>Ministry of Religious Affairs of Bangladesh</a> to facilitate the Hajj journey for BD pilgrims. I worked as a backend developer in this project before the release of first version. Key features of this app are providig Quran, Hadith library, location tracking, pilgrim health profile and many others. This app has been crossed <strong>50k+</strong> downloads on <a target='_blank' class='hover:underline hover:text-cyan-400 font-semibold' href='https://play.google.com/store/apps/details?id=com.ooroh.labbayk&hl=en'>Google Play</a>.",
       "tools":["Ruby on rails", "Grape", "PostgreSQL"],
       "github":"...",
-      "icon":"plane-takeoff",
+      "icon":"plane",
       "href": "https://play.google.com/store/search?q=labbaik&c=apps&androidId=105411843412945873618"
     },
     {
@@ -258,9 +258,9 @@
         "href":"https://www.coursera.org/account/accomplishments/verify/K3XF6LJDA2AL?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
       },
       {
-        "title":"Appriciation certificate",
+        "title":"Appreciation certificate",
         "for": "Smart veichle monitoring & tracking system for khulna university (2nd place in KU innovation showcasing)",
-        "href":"https://drive.google.com/drive/u/1/home"
+        "href":"https://drive.google.com/file/d/1vrs4nZmrY9AQsy4VEPRjBzhjQQSV6OZe/view?usp=drive_link"
       }
     ]
   },

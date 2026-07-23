@@ -1,20 +1,16 @@
 ---
 import portfolio from "../../data/portfolio.json";
-import Badge from "../ui/Badge.astro";
 import Card from "../ui/Card.astro";
-import Icolink from "../ui/Icolink.astro";
 ---
 
-<section id="projects" class="scroll- min-h-screen flex place-items-center">
+<section id="projects" class="scroll- min-h-screen flex place-items-center lg:ml-15">
 	<div>
-    <h2 class="text-2xl mb-4 font-semibold text-slate-200">Projects</h2>
-    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">      
+    <h2 class="text-2xl mb-4 font-semibold md:px-4 text-slate-200">Projects</h2>
+    <ul class="grid md:px-4 py-5 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4">
       {portfolio.projects.map((item) => (
-        <div class="px-2 py-5 ">
-          <li>
-            <Card data={item} />
-          </li>
-        </div>
+        <li>
+          <Card data={item} />
+        </li>
       ))}
     </ul>
 	</div>

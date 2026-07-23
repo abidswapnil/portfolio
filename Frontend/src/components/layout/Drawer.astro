@@ -6,29 +6,29 @@ import portfolio from "../../data/portfolio.json";
 
 <aside
   id="drawer"
-  class="fixed inset-y-0 w-full right-0 translate-x-full bg-surface z-2 shadow-xl transition-transform duration-300 font-serif">    
+  class="fixed inset-y-0 top-0 w-full md:hidden translate-x-full bg-surface z-2 shadow-xl transition-transform duration-300 font-serif">    
   <div class="flex h-full flex-col">
     <!-- Header -->
 
     <!-- Drawer Items -->
-  <nav>
-    <button
-      id="close-button"
-      class="absolute top-3 right-3 z-1 rounded-full bg-white/10 p-1 text-white backdrop-blur-md"
-    >
-      <Icon name="lucide:x" class="h-7 w-7" />
-    </button>
+    <nav>
+      <button
+        id="close-button"
+        class="absolute top-3 right-3 z-1 rounded-full bg-white/10 p-1 text-white backdrop-blur-md"
+      >
+        <Icon name="lucide:x" class="h-7 w-7" />
+      </button>
 
-    <ul class="flex flex-col items-end gap-3 pt-16 pr-5">
-      {portfolio.navigation.map((item) => (
-        <li>
-          <a class="link hover:text-white" href={item.href}>
-            {item.title}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </nav> 
+      <ul class="flex flex-col items-end gap-3 pt-16 pr-5">
+        {portfolio.navigation.map((item) => (
+          <li>
+            <a class="link hover:text-white" href={item.href}>
+              {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav> 
   </div>
 </aside>
 
@@ -45,6 +45,13 @@ import portfolio from "../../data/portfolio.json";
   function closeDrawer() {
     drawer?.classList.add("translate-x-full");
   };
+
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      closeDrawer();
+    }
+  });
   
   menu_button?.addEventListener("click", openDrawer);
   close_button?.addEventListener("click", closeDrawer);

@@ -4,13 +4,11 @@ import me from "../../assets/me.avif";
 import "../../styles/global.css";
 import Social from "../../components/layout/Social.astro";
 
-import { Icon } from "astro-icon/components";
-import Mail from "../ui/Mail.astro";
 
 const data = portfolio.profile
 
 ---
-<section id="about" class="scroll-mt-20 min-h-screen flex place-items-center ">
+<section id="about" class="scroll-mt-20 min-h-screen flex place-items-center lg:ml-15">
   <div class="md:flex">
     <img
         src={me.src}

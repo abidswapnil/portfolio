@@ -1,14 +1,12 @@
 ---
-import { Icon } from "astro-icon/components";
 import portfolio from "../../data/portfolio.json";
-import Bar from "../ui/Bar.astro";
 import Accordion from "../ui/Accordion.astro";
 
 ---
 
-<section id="skills" class="scroll-mt-15 min-h-screen flex place-items-center">
+<section id="skills" class="scroll-mt-15 min-h-screen flex place-items-center lg:ml-15">
 	<div>
-    <h2 class="text-2xl mb-4 font-semibold text-slate-200">Skill</h2>
+    <h2 class="text-2xl mb-4 font-semibold md:px-4 text-slate-200">Skill</h2>
     {portfolio.skills.map((skill) => (
       <div class="flex md:px-4 py-5 flex-wrap md:flex-nowrap ">
         <span class="text-lg w-90 text-gray-400 text-shadow-emerald-50">{skill.category}</span>
@@ -16,7 +14,7 @@ import Accordion from "../ui/Accordion.astro";
           <div class="flex flex-wrap gap-2 mb-2">
             {skill.items.join(", ")}
           </div>
-          <Accordion exp={skill.experience} />
+          <Accordion exp={skill.experience} category={skill.category}/>
         </div>
       </div>
         
