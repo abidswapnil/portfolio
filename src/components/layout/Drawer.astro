@@ -6,7 +6,7 @@ import portfolio from "../../data/portfolio.json";
 
 <aside
   id="drawer"
-  class="fixed inset-y-0 top-0 w-full md:hidden translate-x-[100%] bg-surface z-2 shadow-xl transition-transform duration-300 font-serif">    
+  class="fixed inset-y-0 top-0 w-full md:hidden translate-x-full bg-surface z-2 shadow-xl transition-transform duration-300 font-serif">    
   <div class="flex h-full flex-col">
     <!-- Header -->
 
@@ -39,11 +39,11 @@ import portfolio from "../../data/portfolio.json";
   const menu_button = document.getElementById("menu-button")
 
   function openDrawer() {
-    drawer?.classList.remove("translate-x-[100%]");
+    drawer?.classList.remove("translate-x-full");
   };
   
   function closeDrawer() {
-    drawer?.classList.add("translate-x-[100%]");
+    drawer?.classList.add("translate-x-full");
   };
 
 
