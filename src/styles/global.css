@@ -83,7 +83,7 @@ html {
 
 .typing {
   display: inline-block;
-  width: 26 ch;          /* final width */
+  width: 26ch;          /* final width */
   overflow: hidden;
   white-space: nowrap;
   font-family: monospace;
