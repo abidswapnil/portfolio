@@ -16,7 +16,7 @@
   "skills": [
     {
       "category": "Languages",
-      "experience": "I have written several Python projects based on <a href='https://inventwithpython.com/bigbookpython/' target='_blank'><strong class='text-slate-300 hover:underline hover:text-cyan-400'>The Big Book of Small Python Projects</strong></a>. In my previous company, I worked with Grape, a Ruby-based API framework, to build RESTful APIs. During my academic years, I primarily used raw PHP to build various web applications. I use C++ during competitive programming and problem-solving, apart from that I have basic understanding of C.",
+      "experience": "I have written several Python projects from <a href='https://inventwithpython.com/bigbookpython/' target='_blank'><strong class='text-slate-300 hover:underline hover:text-cyan-400'>The Big Book of Small Python Projects</strong></a>, that gave me a good grasp of OOP with python. In my previous company, I worked with Grape, a Ruby-based API framework, to build RESTful APIs. During my academic years, I primarily used raw PHP to build various web applications. I use C++ during competitive programming and problem-solving, apart from that I have basic understanding of C.",
       "items": [
         "Python",
         "Ruby",
