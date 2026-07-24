@@ -220,12 +220,13 @@
       "icon":"square-arrow-out-up-right"
     },
     {
-      "title":"Pymer (Desktop timer)",
+      "title":"Pymer (Desktop timer for ubuntu)",
       "date":"2026",
       "category":"Personal",
       "description": "A countdown timer with Start, pause, and reset controls time's up alarm, always-on-top mode clean and minimal user interface lightweight that has been developed out of my need. It is available on <a target='_blank' href='https://snapcraft.io/pymer' class = 'font-semibold hover:underline hover:text-cyan-400'>Snap store</a>.",
       "tools":["PyQt5"],
-      "github":"https://github.com/abidswapnil/Pymer-release",
+      "github":"",
+      "href":"https://snapcraft.io/install/pymer/ubuntu",
       "icon":"square-arrow-out-up-right"
     }
   ],
