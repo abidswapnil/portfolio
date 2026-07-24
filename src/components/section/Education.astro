@@ -17,7 +17,7 @@ import SubSection from "../section/SubSection.astro";
 					 py-5">
 				<div class="flex w-90 flex-nowrap">
 					<Icon name={`twemoji:${item.emoji}`} class="text-md mr-2 mt-1 h-4 w-4"/> 
-				  <span class="text-md text-gray-400 text-shadow-emerald-50">{item.end}</span>
+				  <span class="text-base text-shadow-emerald-50">{item.end}</span>
 				</div>
 				{/* <div class="w-90 hidden md:block">
 					<img
@@ -27,7 +27,7 @@ import SubSection from "../section/SubSection.astro";
 					/>
 				</div> */}
 				<div class="flex w-full flex-col">
-          <span class="text-xl text-slate-200">{item.institute}</span>
+          <span class="lg:text-lg text-base text-slate-200">{item.institute}</span>
           <span class="mb-4 text-sm text-slate-200">{item.degree}</span>
 					{item.research && (<SubSection key="Thesis" value={item.research} />)}
 					{item.sec && (<SubSection key="Section" value={item.sec} />)}

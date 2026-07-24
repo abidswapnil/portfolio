@@ -25,10 +25,10 @@ import Icolink from "../ui/Icolink.astro";
 						duration-200 
 						ease-linear 
 						hover:bg-accent/5">
-          <span class="text-md w-90 text-gray-400 text-shadow-emerald-50">{item.start} — {item.end}</span>
+          <span class="text-base w-90 text-gray-400 text-shadow-emerald-50">{item.start} — {item.end}</span>
           <div class="w-full">
             <div class="md:flex group-hover:text-cyan-400 text-slate-200 inline-flex">
-              <p class="flex transition-colors text-xl md:gap-2">{item.position}, {item.company} </p>
+              <p class="flex transition-colors lg:text-lg text-base md:gap-2">{item.position}, {item.company} </p>
               <Icolink class="h-4 shrink-0 w-4 ml-1 mt-1 inline-block align-text-bottom group-hover:text-cyan-400 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform duration-300" />
             </div>
             <ol class="list-disc p-5 ">

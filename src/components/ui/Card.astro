@@ -5,16 +5,16 @@ import { Icon } from "astro-icon/components";
 ---
 
 <a href={data.href || data.github}  target="_blank">
-  <div class="h-87 p-5 
+  <div class="h-95 p-5 
       group
       relative
-      border-b-3
+      border-b-2
       flex-1
-      border-b-white/10
-      border-r-3
-      border-r-white/10
+      border-b-white/20
+      border-r-2
+      border-r-white/20
       rounded-sm
-      bg-card/50
+      bg-card/25
       transition-transform 
       duration-300 
       hover:-translate-y-1
@@ -30,12 +30,12 @@ import { Icon } from "astro-icon/components";
     <p class="text-slate-300 text-md mb-2 mt-2 font-semibold">{data.title}</p>
 
     <div class="mt-2 w-full mb-4">
-      <p set:html={data.description} class="text-sm text-slate-300/80 "></p>
+      <p set:html={data.description} class="text-sm "></p>
     </div>
-    <footer class="absolute bottom-3 left-5 right-5">
-      <div class="text-slate-400/70 text-sm flex items-center">
+    <footer class="absolute bottom-3 left-5 right-5 text-sm">
+      <div class="text-slate-400/50 text-sm flex items-center">
         <span>{data.tools.join(", ")}</span>
-        <Icon name={`lucide:${data.icon}`} class="h-6 w-6 ml-auto group-hover:text-cyan-400 group-hover:duration-300 group-hover:transition-colors" />
+        <Icon name={`lucide:${data.icon}`} class="h-5 w-5 ml-auto group-hover:text-cyan-400 group-hover:duration-300 group-hover:transition-colors" />
       </div>
     </footer>
   </div>

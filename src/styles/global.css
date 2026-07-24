@@ -27,18 +27,13 @@ html {
 @font-face {
   font-family: "Inter";
   src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
-  font-display: optional;
-
-  size-adjust: 107%;
-  ascent-override: 90%;
-  descent-override: 22%;
-  line-gap-override: 0%;
+  font-display: swap;
 }
 
 @theme inline {
   /* Fonts */
   --font-sans : "Courier Prime", sans-serif;
-  --font-serif : "Comic Neue", serif;
+  --font-serif : "Inter", serif;
 
   /* Colors */
   --color-background: #020617;
