@@ -19,32 +19,33 @@ import { Icon } from "astro-icon/components";
             relative
             inline-flex
             items-center
-            pl-10
+            pl-12
             font-semibold
+
             before:absolute
             before:left-0
             before:top-1/2
+            before:-translate-y-1/2
             before:h-px
             before:w-8
             before:bg-white/50
-            before:transition-transform
-            before:duration-500
-            delay-200
-            
-            hover:before:w-10
+            before:transition-all
+            before:duration-100
+
+            hover:before:w-16
             hover:before:bg-white
           "
         >
           <span
             class="
               text-white/50
-              transition-transform
-              duration-300
-              group-hover:translate-x-6
+              transition-all
+              duration-100
               group-hover:text-white
+              lg:group-hover:translate-x-8
             "
           >
-          {item.title}
+            {item.title}
           </span>
         </a>
       </li>
